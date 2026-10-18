@@ -1,0 +1,318 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>TOROTE Bravura</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<meta name="description" content="TOROTE Gym Wear — gorras, straps, toallas, maletas y ropa. Arma tu pedido y envíalo por WhatsApp.">
+<meta property="og:title" content="TOROTE — Bravura">
+<meta property="og:image" content="assets/img/hero.jpg">
+<link rel="icon" href="assets/isotipo_rojo.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anton&family=Archivo:wdth,wght@75..125,400..800&family=JetBrains+Mono:wght@500;700&display=swap">
+<style>
+/* Layout: gimnasio de noche. Pantalla negra de hierro, fichas de producto color hueso
+   como placas de estudio, el precio estampado como un disco de 20 kg. Una sola apariencia oscura. */
+:root{
+  --iron:#0E0D0C;      /* fondo */
+  --iron-2:#1A1816;    /* superficies */
+  --bone:#EEEAE3;      /* fichas de producto */
+  --chalk:#F7F5F1;     /* texto sobre negro */
+  --ash:#9A948C;       /* texto secundario */
+  --toro:#E3120B;      /* rojo de marca */
+  --toro-ink:#B00D07;
+  --line:#2B2825;
+  --display:"Anton","Impact","Haettenschweiler","Arial Narrow Bold",sans-serif;
+  --body:"Archivo","Helvetica Neue",Arial,sans-serif;
+  --mono:"JetBrains Mono",ui-monospace,"SFMono-Regular",Menlo,monospace;
+  color-scheme:dark;
+}
+*{box-sizing:border-box}
+[hidden]{display:none!important}
+img{max-width:100%}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--iron);color:var(--chalk);font:400 16px/1.5 var(--body);-webkit-font-smoothing:antialiased}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:30;background:var(--iron)}
+.wrap{padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));max-width:1240px;margin:0 auto}
+a{color:inherit}
+button{font:inherit;color:inherit}
+:focus-visible{outline:3px solid var(--toro);outline-offset:2px}
+.mono{font-family:var(--mono);font-size:12px;letter-spacing:.14em;text-transform:uppercase}
+
+/* header */
+header.top{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:color-mix(in srgb,var(--iron) 88%,transparent);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+header.top .wrap{display:flex;align-items:center;justify-content:space-between;gap:12px;padding-block:10px}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none}
+.brand img{width:30px;height:auto}
+.word{font-family:var(--display);font-size:28px;line-height:1;letter-spacing:.02em}
+.word b{font-weight:400;color:var(--toro)}
+.cartbtn{display:flex;align-items:center;gap:10px;background:var(--chalk);color:var(--iron);border:0;border-radius:999px;padding:8px 8px 8px 16px;font-weight:700;cursor:pointer}
+.cartbtn .n{font-family:var(--mono);background:var(--toro);color:#fff;border-radius:999px;min-width:28px;height:28px;display:grid;place-items:center;font-size:13px}
+
+/* hero */
+.hero{position:relative;overflow:hidden;border-bottom:1px solid var(--line)}
+.hero .wrap{position:relative;display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,.95fr);gap:24px;align-items:end;padding-block:28px 36px}
+.hero .big{font-family:var(--display);font-size:clamp(84px,17vw,230px);line-height:.84;margin:0;letter-spacing:-.005em;text-transform:uppercase}
+.hero .big span{display:block}
+.hero .big .r{color:var(--toro)}
+.hero p.lead{font-size:clamp(17px,2vw,20px);max-width:34ch;color:var(--chalk);margin:18px 0 22px;text-wrap:pretty}
+.hero .meta{display:flex;flex-wrap:wrap;gap:8px 18px;color:var(--ash);margin-bottom:22px}
+.hero figure{margin:0;position:relative;aspect-ratio:4/5;max-width:100%;border-radius:4px;overflow:hidden;background:var(--iron-2)}
+.hero figure img{width:100%;height:100%;object-fit:cover;object-position:50% 70%;display:block;filter:contrast(1.05) saturate(1.05)}
+.hero figure figcaption{position:absolute;left:12px;bottom:12px;background:var(--iron);padding:6px 10px}
+.cta{display:inline-flex;align-items:center;gap:10px;background:var(--toro);color:#fff;text-decoration:none;font-weight:800;font-size:17px;padding:14px 22px;border-radius:999px;border:0;cursor:pointer}
+.cta:hover{background:var(--toro-ink)}
+
+/* manifiesto */
+.manif{border-bottom:1px solid var(--line)}
+.manif .wrap{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:0;padding-block:0}
+.manif div{padding:22px 18px 22px 0;border-right:1px solid var(--line)}
+.manif div:last-child{border-right:0}
+.manif h3{font-family:var(--display);font-weight:400;font-size:clamp(26px,3.4vw,38px);margin:4px 0 6px;line-height:1;text-transform:uppercase}
+.manif p{margin:0;color:var(--ash);max-width:32ch;font-size:15px}
+
+/* catálogo */
+#catalogo{padding-block:40px 140px}
+.cathead{display:flex;flex-wrap:wrap;align-items:end;justify-content:space-between;gap:16px;margin-bottom:18px}
+.cathead h2{font-family:var(--display);font-weight:400;font-size:clamp(44px,7vw,84px);line-height:.9;margin:0;text-transform:uppercase}
+.cathead p{margin:0;color:var(--ash);max-width:40ch}
+.chips{display:flex;gap:8px;overflow-x:auto;padding-bottom:6px;margin-bottom:20px;scrollbar-width:none}
+.chips button{flex:none;border:1px solid var(--line);background:transparent;border-radius:999px;padding:9px 16px;cursor:pointer;font-weight:600;font-size:15px}
+.chips button[aria-pressed="true"]{background:var(--chalk);color:var(--iron);border-color:var(--chalk)}
+.chips small{font-family:var(--mono);opacity:.6;margin-left:6px;font-size:11px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:14px}
+.card{background:var(--bone);color:var(--iron);border-radius:4px;overflow:hidden;display:flex;flex-direction:column}
+.card .ph{position:relative;aspect-ratio:4/5;max-width:100%;background:#e3dfd8}
+.card .ph img{width:100%;height:100%;object-fit:cover;display:block}
+.plate{position:absolute;right:10px;top:10px;width:64px;height:64px;border-radius:50%;background:var(--iron);color:var(--chalk);display:grid;place-items:center;box-shadow:inset 0 0 0 4px var(--iron),inset 0 0 0 6px #3a3633}
+.plate b{font-family:var(--display);font-weight:400;font-size:26px;line-height:1;margin-top:4px}
+.plate i{font-style:normal;font-family:var(--mono);font-size:8px;letter-spacing:.12em;margin-top:-14px}
+.plate.ask{background:var(--toro);box-shadow:inset 0 0 0 4px var(--toro),inset 0 0 0 6px #ff6a5c}
+.plate.ask b{font-size:13px;font-family:var(--mono);font-weight:700;letter-spacing:.06em}
+.card .bd{padding:12px 12px 14px;display:flex;flex-direction:column;gap:10px;flex:1}
+.card h4{margin:0;font-size:16px;font-weight:700;line-height:1.2;font-stretch:90%}
+.card .row{display:flex;align-items:center;justify-content:space-between;gap:8px;margin-top:auto}
+.card .price{font-family:var(--mono);font-size:13px;font-weight:700}
+.card .price small{font-weight:500;color:#6c665f}
+.sizes{display:flex;gap:4px;flex-wrap:wrap}
+.sizes button{border:1px solid #c9c3ba;background:transparent;color:var(--iron);border-radius:3px;width:34px;height:30px;cursor:pointer;font-family:var(--mono);font-size:12px;font-weight:700}
+.sizes button[aria-pressed="true"]{background:var(--iron);color:var(--chalk);border-color:var(--iron)}
+.add{border:0;background:var(--iron);color:var(--chalk);border-radius:999px;padding:9px 14px;font-weight:700;cursor:pointer;font-size:14px;white-space:nowrap}
+.add.ok{background:var(--toro)}
+
+/* barra del carrito */
+.bar{position:fixed;left:0;right:0;bottom:0;z-index:25;padding-bottom:calc(12px + env(safe-area-inset-bottom,0px));padding-top:12px;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));background:linear-gradient(to top,var(--iron) 70%,transparent);pointer-events:none}
+.bar button{pointer-events:auto;width:100%;max-width:560px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;gap:12px;background:var(--toro);color:#fff;border:0;border-radius:999px;padding:14px 20px;font-weight:800;font-size:16px;cursor:pointer;box-shadow:0 10px 30px #0008}
+.bar .tot{font-family:var(--mono);font-size:14px}
+
+/* hoja del pedido */
+.sheet{position:fixed;inset:0;z-index:40;display:grid;align-items:end;justify-items:center;background:#000a}
+.sheet .pane{width:100%;max-width:560px;max-height:92vh;overflow:auto;background:var(--bone);color:var(--iron);border-radius:14px 14px 0 0;padding:20px max(18px,env(safe-area-inset-left,0px)) calc(20px + env(safe-area-inset-bottom,0px)) max(18px,env(safe-area-inset-right,0px))}
+.sheet h3{font-family:var(--display);font-weight:400;font-size:40px;margin:0;line-height:1;text-transform:uppercase}
+.sheet .x{float:right;border:0;background:var(--iron);color:var(--chalk);width:36px;height:36px;border-radius:50%;cursor:pointer;font-size:18px}
+.lines{list-style:none;padding:0;margin:16px 0;display:grid;gap:10px}
+.lines li{display:grid;grid-template-columns:52px minmax(0,1fr) auto;gap:10px;align-items:center}
+.lines img{width:52px;height:65px;object-fit:cover;border-radius:3px}
+.lines .nm{font-weight:700;font-size:15px;line-height:1.2}
+.lines .sub{font-family:var(--mono);font-size:12px;color:#6c665f}
+.qty{display:flex;align-items:center;gap:6px}
+.qty button{width:30px;height:30px;border-radius:50%;border:1.5px solid var(--iron);background:transparent;color:var(--iron);cursor:pointer;font-weight:800}
+.qty span{font-family:var(--mono);min-width:1.6em;text-align:center;font-weight:700}
+.sum{border-top:1.5px dashed #b8b1a6;padding-top:12px;display:grid;gap:4px;font-family:var(--mono);font-size:14px;font-variant-numeric:tabular-nums}
+.sum div{display:flex;justify-content:space-between}
+.sum .g{font-size:20px;font-weight:700;margin-top:4px}
+.form{display:grid;gap:10px;margin:16px 0}
+.form label{display:grid;gap:4px;font-size:13px;font-weight:700}
+.form input,.form select{font:inherit;font-weight:400;padding:11px 12px;border:1.5px solid #c9c3ba;border-radius:8px;background:#fff;color:var(--iron);color-scheme:light}
+.send{display:flex;justify-content:center;align-items:center;gap:10px;background:#1FA855;color:#fff;text-decoration:none;font-weight:800;font-size:17px;padding:15px;border-radius:999px}
+.send[aria-disabled="true"]{opacity:.45;pointer-events:none}
+.note{font-size:13px;color:#6c665f;margin:10px 0 0;text-align:center}
+.empty{color:#6c665f;margin:18px 0}
+
+footer{border-top:1px solid var(--line);color:var(--ash)}
+footer .wrap{display:flex;flex-wrap:wrap;gap:12px 24px;justify-content:space-between;align-items:center;padding-block:28px 120px}
+footer img{width:44px}
+
+@media (max-width:760px){
+  .hero .wrap{grid-template-columns:1fr;padding-block:18px 28px}
+  .hero figure{order:-1;aspect-ratio:4/4.2}
+  .manif .wrap{grid-template-columns:1fr}
+  .manif div{border-right:0;border-bottom:1px solid var(--line);padding:16px 0}
+  .manif div:last-child{border-bottom:0}
+  .grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+  .plate{width:52px;height:52px;right:8px;top:8px}
+  .plate b{font-size:21px}
+  .card .row{flex-wrap:wrap}
+  .add{width:100%}
+}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important;animation:none!important}}
+</style>
+</head>
+<body>
+
+
+<header class="top"><div class="wrap">
+  <a class="brand" href="#top" aria-label="TOROTE inicio"><img src="assets/isotipo_rojo.svg" alt=""><span class="word">TORO<b>T</b>E</span></a>
+  <button class="cartbtn" id="openCart" type="button">Pedido <span class="n" id="count">0</span></button>
+</div></header>
+
+<main id="top">
+<section class="hero"><div class="wrap">
+  <div>
+    <p class="mono" style="color:var(--toro);margin:0 0 6px">TOROTE Gym Wear · Quito</p>
+    <h1 class="big"><span>Bra</span><span class="r">vura</span></h1>
+    <p class="lead">Gorras, straps, toallas, maletas y ropa para entrenar. Bordado y cosido en Ecuador desde 2016.</p>
+    <div class="meta mono"><span>Hecho en Ecuador</span><span>Precios con IVA incluido</span><span>Pedido por WhatsApp</span></div>
+    <a class="cta" href="#catalogo">Ver catálogo →</a>
+  </div>
+  <figure><img src="assets/img/hero.jpg" alt="Atleta TOROTE haciendo dominadas en el gimnasio" fetchpriority="high"><figcaption class="mono">Since 2016</figcaption></figure>
+</div></section>
+
+<section class="manif" aria-label="Qué es bravura"><div class="wrap">
+  <div><span class="mono" style="color:var(--ash)">Coraje</span><h3>Courage</h3><p>Empezar el set pesado aunque no tengas ganas.</p></div>
+  <div><span class="mono" style="color:var(--ash)">Templanza</span><h3>Temperance</h3><p>Dejar la última rep si la técnica se rompe.</p></div>
+  <div><span class="mono" style="color:var(--ash)">Sabiduría</span><h3>Wisdom</h3><p>Entrenar con un plan propio, no con el de otro.</p></div>
+</div></section>
+
+<section id="catalogo" class="wrap">
+  <div class="cathead">
+    <h2>Shop</h2>
+    <p>Toca <b>Agregar</b>, revisa tu pedido y envíalo. Te contestamos por WhatsApp para coordinar pago y entrega.</p>
+  </div>
+  <div class="chips" id="chips" role="toolbar" aria-label="Categorías"></div>
+  <div class="grid" id="grid"></div>
+</section>
+</main>
+
+<footer><div class="wrap">
+  <img src="assets/isotipo_blanco.svg" alt="TOROTE">
+  <span class="mono">Made in Ecuador · since 2016</span>
+  <a class="mono" href="https://www.instagram.com/torotegymwear/" target="_blank" rel="noopener">@torotegymwear</a>
+</div></footer>
+
+<div class="bar" id="bar" hidden><button type="button" id="barBtn"><span id="barTxt">Ver pedido</span><span class="tot" id="barTot">$0.00</span></button></div>
+
+<div class="sheet" id="sheet" hidden role="dialog" aria-modal="true" aria-labelledby="sheetT">
+  <div class="pane">
+    <button class="x" id="closeCart" type="button" aria-label="Cerrar">✕</button>
+    <h3 id="sheetT">Tu pedido</h3>
+    <ul class="lines" id="lines"></ul>
+    <p class="empty" id="empty" hidden>Todavía no agregas nada. Elige tu equipo en el catálogo.</p>
+    <div class="sum" id="sum"></div>
+    <form class="form" id="f" autocomplete="on">
+      <label for="nombre">Tu nombre<input id="nombre" name="nombre" placeholder="Ej. Andrea Torres" autocomplete="name"></label>
+      <label for="entrega">Entrega<select id="entrega" name="entrega">
+        <option>Retiro en la USFQ</option><option>Envío dentro de Quito</option><option>Envío a otra ciudad</option>
+      </select></label>
+    </form>
+    <a class="send" id="send" href="#" target="_blank" rel="noopener">Enviar pedido por WhatsApp</a>
+    <p class="note">Se abre WhatsApp con tu pedido listo. Número de pedidos: <span id="num" style="user-select:all"></span></p>
+  </div>
+</div>
+
+<script>
+/* ---------------- configuración (editable) ---------------- */
+const CONFIG = {
+  whatsapp: "593969577774",   // número de pedidos (Ecuador +593, sin el 0 inicial)
+  iva: 0.15,                  // IVA Ecuador
+  tallas: ["S","M","L","XL"],
+  categorias: {kits:"Kits", gorras:"Gorras", straps:"Straps", toallas:"Toallas", maletas:"Maletas", ropa:"Ropa"}
+};
+// price: número = precio final con IVA incluido · null = "precio por WhatsApp"
+const PRODUCTS = [{"id":"kit-bravura","cat":"kits","name":"Kit Bravura: gorra + straps + toalla + maleta","price":129,"sizes":false},{"id":"g-roja","cat":"gorras","name":"Gorra Roja Toro","price":32,"sizes":false},{"id":"g-ss","cat":"gorras","name":"Gorra Strong Soul","price":32,"sizes":false},{"id":"g-dl","cat":"gorras","name":"Gorra Dead Lift","price":32,"sizes":false},{"id":"g-bp","cat":"gorras","name":"Gorra Bench Press","price":32,"sizes":false},{"id":"g-gw","cat":"gorras","name":"Gorra Gym Wear","price":32,"sizes":false},{"id":"g-sq","cat":"gorras","name":"Gorra Squats","price":32,"sizes":false},{"id":"g-front","cat":"gorras","name":"Gorra TOROTE Frontal","price":32,"sizes":false},{"id":"g-parche","cat":"gorras","name":"Gorra Parche Negra","price":32,"sizes":false},{"id":"g-parche-r","cat":"gorras","name":"Gorra Parche Roja","price":32,"sizes":false},{"id":"g-mandala","cat":"gorras","name":"Gorra Roja Mandala","price":32,"sizes":false},{"id":"g-gw-r","cat":"gorras","name":"Gorra Roja Gym Wear","price":32,"sizes":false},{"id":"g-gw-y","cat":"gorras","name":"Gorra Gym Wear Dorada","price":32,"sizes":false},{"id":"s-rojo","cat":"straps","name":"Straps Rojos","price":26,"sizes":false},{"id":"s-lima","cat":"straps","name":"Straps Verde Lima","price":26,"sizes":false},{"id":"s-militar","cat":"straps","name":"Straps Verde Militar","price":24,"sizes":false},{"id":"s-rosa","cat":"straps","name":"Straps Rosa Neón","price":24,"sizes":false},{"id":"t-negra","cat":"toallas","name":"Toalla Negra TOROTE","price":22,"sizes":false},{"id":"t-xl","cat":"toallas","name":"Toalla Negra Letras XL","price":28,"sizes":false},{"id":"t-amarilla","cat":"toallas","name":"Toalla Amarilla","price":22,"sizes":false},{"id":"t-roja","cat":"toallas","name":"Toalla Roja","price":22,"sizes":false},{"id":"t-gw","cat":"toallas","name":"Toalla Gym Wear","price":22,"sizes":false},{"id":"m-roja","cat":"maletas","name":"Maleta Roja TOROTE","price":69,"sizes":false},{"id":"m-negra","cat":"maletas","name":"Maleta Negra y Roja","price":69,"sizes":false},{"id":"m-naranja","cat":"maletas","name":"Maleta Naranja","price":69,"sizes":false},{"id":"m-cil-r","cat":"maletas","name":"Maleta Cilíndrica Roja","price":55,"sizes":false},{"id":"m-cil-n","cat":"maletas","name":"Maleta Cilíndrica Negra","price":55,"sizes":false},{"id":"r-ss","cat":"ropa","name":"Camiseta Strong Soul","price":36,"sizes":true},{"id":"r-fitgirl","cat":"ropa","name":"Camiseta Fit Girl","price":36,"sizes":true},{"id":"r-squats","cat":"ropa","name":"Camiseta Squats","price":36,"sizes":true},{"id":"r-fw-n","cat":"ropa","name":"Camiseta Fit Wear Negra","price":36,"sizes":true},{"id":"r-fw-r","cat":"ropa","name":"Camiseta Fit Wear Roja","price":36,"sizes":true},{"id":"r-tank-m","cat":"ropa","name":"Tank Militar","price":32,"sizes":true},{"id":"r-tank-r","cat":"ropa","name":"Tank Roja","price":32,"sizes":true},{"id":"r-tank-n","cat":"ropa","name":"Tank Negra","price":32,"sizes":true},{"id":"r-hood-n","cat":"ropa","name":"Hoodie Gym Wear Negro","price":68,"sizes":true},{"id":"r-hood-r","cat":"ropa","name":"Hoodie Gym Wear Rojo","price":68,"sizes":true},{"id":"r-buzo-r","cat":"ropa","name":"Buzo Sports Wear Rojo","price":62,"sizes":true},{"id":"r-buzo-a","cat":"ropa","name":"Buzo Sports Wear Azul","price":62,"sizes":true},{"id":"r-malla-n","cat":"ropa","name":"Hoodie Malla Negro","price":72,"sizes":true},{"id":"r-malla-g","cat":"ropa","name":"Hoodie Malla Gris","price":72,"sizes":true}];
+/* ----------------------------------------------------------- */
+
+const $ = s => document.querySelector(s);
+const money = n => "$" + n.toFixed(2);
+const byId = Object.fromEntries(PRODUCTS.map(p => [p.id, p]));
+let cart = [];
+try { cart = JSON.parse(localStorage.getItem("torote_cart") || "[]").filter(l => byId[l.id]); } catch (e) { cart = []; }
+const save = () => { try { localStorage.setItem("torote_cart", JSON.stringify(cart)); } catch (e) {} };
+const chosenSize = {};
+let filter = "todo";
+try { const h = location.hash.slice(1); if (CONFIG.categorias[h]) filter = h; } catch (e) {}
+
+function chips() {
+  const cats = [["todo", "Todo", PRODUCTS.length], ...Object.entries(CONFIG.categorias).map(([k, v]) => [k, v, PRODUCTS.filter(p => p.cat === k).length])];
+  $("#chips").innerHTML = cats.map(([k, v, n]) => `<button type="button" data-c="${k}" aria-pressed="${k === filter}">${v}<small>${n}</small></button>`).join("");
+}
+function grid() {
+  const list = PRODUCTS.filter(p => filter === "todo" || p.cat === filter);
+  $("#grid").innerHTML = list.map(p => `
+    <article class="card">
+      <div class="ph"><img src="assets/p/${p.id}.jpg" alt="${p.name}" loading="lazy" width="720" height="900">
+        ${p.price != null ? `<span class="plate" aria-hidden="true"><b>${p.price}</b><i>USD</i></span>` : `<span class="plate ask" aria-hidden="true"><b>CONSULTA</b></span>`}
+      </div>
+      <div class="bd">
+        <h4>${p.name}</h4>
+        ${p.sizes ? `<div class="sizes" role="group" aria-label="Talla">${CONFIG.tallas.map(t => `<button type="button" data-s="${p.id}|${t}" aria-pressed="${chosenSize[p.id] === t}">${t}</button>`).join("")}</div>` : ""}
+        <div class="row">
+          <span class="price">${p.price != null ? `${money(p.price)} <small>IVA incl.</small>` : `<small>Precio por WhatsApp</small>`}</span>
+          <button class="add" type="button" data-a="${p.id}">Agregar</button>
+        </div>
+      </div>
+    </article>`).join("");
+}
+function totals() {
+  let sub = 0, units = 0, pend = false;
+  cart.forEach(l => { const p = byId[l.id]; units += l.q; if (p.price == null) pend = true; else sub += p.price * l.q; });
+  const iva = sub - sub / (1 + CONFIG.iva);   // los precios ya incluyen IVA
+  return { sub, iva, total: sub, units, pend };
+}
+function lineName(l) { const p = byId[l.id]; return p.name + (l.t ? ` (talla ${l.t})` : ""); }
+function message() {
+  const t = totals();
+  const rows = cart.map(l => { const p = byId[l.id]; return `• ${l.q}× ${lineName(l)} — ${p.price != null ? money(p.price * l.q) : "precio por confirmar"}`; });
+  const nombre = $("#nombre").value.trim();
+  return [
+    "TOROTE · Pedido", "",
+    ...rows, "",
+    `Total: ${money(t.total)} (IVA incluido)${t.pend ? " + por confirmar" : ""}`, "",
+    nombre ? `Nombre: ${nombre}` : null,
+    `Entrega: ${$("#entrega").value}`
+  ].filter(x => x !== null).join("\n");
+}
+function render() {
+  const t = totals();
+  $("#count").textContent = t.units;
+  $("#bar").hidden = t.units === 0;
+  $("#barTxt").textContent = `Ver pedido · ${t.units} ${t.units === 1 ? "artículo" : "artículos"}`;
+  $("#barTot").textContent = money(t.total) + (t.pend ? " +" : "");
+  $("#empty").hidden = cart.length > 0;
+  $("#lines").innerHTML = cart.map((l, i) => { const p = byId[l.id]; return `
+    <li><img src="assets/p/${p.id}.jpg" alt="">
+      <div><div class="nm">${lineName(l)}</div><div class="sub">${p.price != null ? money(p.price) + " c/u" : "Precio por WhatsApp"}</div></div>
+      <div class="qty"><button type="button" data-q="${i}|-1" aria-label="Quitar uno">−</button><span>${l.q}</span><button type="button" data-q="${i}|1" aria-label="Agregar uno">+</button></div></li>`; }).join("");
+  $("#sum").innerHTML = cart.length ? `<div class="g"><span>Total</span><span>${money(t.total)}</span></div><div style="font-size:12px;color:#6c665f"><span>Incluye IVA ${Math.round(CONFIG.iva * 100)}%</span><span>${money(t.iva)}</span></div>` : "";
+  const a = $("#send");
+  a.href = `https://api.whatsapp.com/send?phone=${CONFIG.whatsapp}&text=${encodeURIComponent(message())}`;
+  a.setAttribute("aria-disabled", cart.length ? "false" : "true");
+  $("#num").textContent = "+" + CONFIG.whatsapp.replace(/^593/, "593 ");
+}
+function add(id) {
+  const p = byId[id];
+  let t = null;
+  if (p.sizes) { t = chosenSize[id]; if (!t) { const g = document.querySelector(`[data-s^="${id}|"]`); g && g.parentElement.animate([{ transform: "translateX(0)" }, { transform: "translateX(-4px)" }, { transform: "translateX(4px)" }, { transform: "translateX(0)" }], 220); return false; } }
+  const l = cart.find(x => x.id === id && x.t === t);
+  l ? l.q++ : cart.push({ id, t, q: 1 });
+  save(); render(); return true;
+}
+document.addEventListener("click", e => {
+  const c = e.target.closest("[data-c]"); if (c) { filter = c.dataset.c; chips(); grid(); return; }
+  const s = e.target.closest("[data-s]"); if (s) { const [id, t] = s.dataset.s.split("|"); chosenSize[id] = t; s.parentElement.querySelectorAll("button").forEach(b => b.setAttribute("aria-pressed", b === s)); return; }
+  const a = e.target.closest("[data-a]"); if (a) { if (add(a.dataset.a)) { a.textContent = "Agregado ✓"; a.classList.add("ok"); setTimeout(() => { a.textContent = "Agregar"; a.classList.remove("ok"); }, 1100); } else { a.textContent = "Elige talla"; setTimeout(() => a.textContent = "Agregar", 1100); } return; }
+  const q = e.target.closest("[data-q]"); if (q) { const [i, d] = q.dataset.q.split("|").map(Number); cart[i].q += d; if (cart[i].q <= 0) cart.splice(i, 1); save(); render(); return; }
+});
+const open = () => { $("#sheet").hidden = false; document.body.style.overflow = "hidden"; };
+const close = () => { $("#sheet").hidden = true; document.body.style.overflow = ""; };
+$("#openCart").onclick = open; $("#barBtn").onclick = open; $("#closeCart").onclick = close;
+$("#sheet").addEventListener("click", e => { if (e.target.id === "sheet") close(); });
+document.addEventListener("keydown", e => { if (e.key === "Escape") close(); });
+$("#f").addEventListener("input", render); $("#f").addEventListener("submit", e => e.preventDefault());
+chips(); grid(); render();
+</script>
+
+</body>
+</html>

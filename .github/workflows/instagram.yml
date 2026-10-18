@@ -1,0 +1,68 @@
+name: Instagram TOROTE
+
+on:
+  schedule:
+    - cron: "7,37 * * * *"      # cada 30 min publica lo aprobado que ya venció
+    - cron: "23 9 1,15 * *"     # días 1 y 15: renueva el token de Instagram
+  workflow_dispatch:
+    inputs:
+      modo:
+        description: "check = probar token | publish = publicar lo aprobado | refresh = renovar token | validate = revisar la cola"
+        required: true
+        default: check
+        type: choice
+        options: [check, publish, refresh, validate]
+
+permissions:
+  contents: write
+
+concurrency:
+  group: instagram
+  cancel-in-progress: false
+
+jobs:
+  ig:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Elegir modo
+        id: modo
+        run: |
+          if [ -n "${{ inputs.modo }}" ]; then echo "m=${{ inputs.modo }}" >> "$GITHUB_OUTPUT";
+          elif [ "${{ github.event.schedule }}" = "23 9 1,15 * *" ]; then echo "m=refresh" >> "$GITHUB_OUTPUT";
+          else echo "m=publish" >> "$GITHUB_OUTPUT"; fi
+
+      - name: Instagram (${{ steps.modo.outputs.m }})
+        id: run
+        env:
+          IG_TOKEN: ${{ secrets.IG_TOKEN }}
+          IG_USER_ID: ${{ secrets.IG_USER_ID }}
+          SITE_URL: ${{ vars.SITE_URL }}
+        run: python scripts/ig_publish.py ${{ steps.modo.outputs.m }}
+
+      # Guarda el token renovado como secreto. Necesita el secreto GH_PAT
+      # (token fino de GitHub con permiso "Secrets: Read and write" solo en este repo).
+      - name: Guardar token renovado
+        if: steps.modo.outputs.m == 'refresh' && steps.run.outputs.token != ''
+        env:
+          GH_TOKEN: ${{ secrets.GH_PAT }}
+          NEW_TOKEN: ${{ steps.run.outputs.token }}
+        run: |
+          if [ -z "$GH_TOKEN" ]; then echo "Sin GH_PAT: el token se renovó en Meta pero no se guardó. Sigue funcionando el mismo."; exit 0; fi
+          printf '%s' "$NEW_TOKEN" | gh secret set IG_TOKEN --repo "$GITHUB_REPOSITORY"
+          echo "IG_TOKEN actualizado."
+
+      - name: Guardar registro
+        if: always() && steps.modo.outputs.m == 'publish'
+        run: |
+          if [ -f ig/published.json ] && [ -n "$(git status --porcelain ig/published.json)" ]; then
+            git config user.name "torote-bot"
+            git config user.email "torote-bot@users.noreply.github.com"
+            git add ig/published.json
+            git commit -m "IG: registro de publicación"
+            git pull --rebase -q && git push
+          fi
