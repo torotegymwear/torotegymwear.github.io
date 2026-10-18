@@ -148,6 +148,9 @@ def main():
     if mode == "validate":
         sys.exit(0 if validate() else 1)
     if not TOKEN or not USER_ID:
+        if mode == "publish":  # corrida automática antes de configurar: no falla, solo avisa
+            print("Aún no hay secretos IG_TOKEN / IG_USER_ID. No se publica nada.")
+            return
         raise SystemExit("Faltan los secretos IG_TOKEN o IG_USER_ID")
 
     if mode == "check":
