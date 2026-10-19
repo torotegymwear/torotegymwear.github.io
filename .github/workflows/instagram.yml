@@ -1,6 +1,9 @@
 name: Instagram TOROTE
 
 on:
+  push:
+    branches: [main]
+    paths: ["ig/queue.json"]   # al aprobar o cambiar la cola, publica de inmediato
   schedule:
     - cron: "7,37 * * * *"      # cada 30 min publica lo aprobado que ya venció
     - cron: "23 9 1,15 * *"     # días 1 y 15: renueva el token de Instagram
