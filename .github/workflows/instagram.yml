@@ -23,6 +23,7 @@ concurrency:
 jobs:
   ig:
     runs-on: ubuntu-latest
+    timeout-minutes: 340
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5

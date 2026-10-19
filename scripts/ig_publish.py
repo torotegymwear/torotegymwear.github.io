@@ -17,7 +17,7 @@ Modos:
   python ig_publish.py refresh   -> renueva el token largo (60 días) e imprime cuántos días le quedan
   python ig_publish.py validate  -> revisa la cola (archivos, fechas, captions) sin llamar a la API
 """
-import json, os, sys, time, urllib.parse, urllib.request
+import json, os, subprocess, sys, time, urllib.parse, urllib.request
 from datetime import datetime, timezone
 
 API = "https://graph.instagram.com"
@@ -170,33 +170,74 @@ def main():
                 fh.write(f"token={new}\n")
         return
 
-    queue = load_queue()
-    done = json.load(open(DONE, encoding="utf-8")) if os.path.exists(DONE) else {}
-    now = datetime.now(timezone.utc)
-    pend = [it for it in queue if it["id"] not in done and it.get("aprobado") and datetime.fromisoformat(it["fecha"]) <= now]
-    pend.sort(key=lambda it: it["fecha"])
-    if not pend:
-        print("Nada que publicar ahora.")
-        return
-    errores = 0
-    for item in pend[:MAX_POR_CORRIDA]:
-        pid = item["id"]
-        print(f"Publicando {pid} ({item.get('tipo', 'post')}) programado para {item['fecha']}…")
-        try:
-            media_id = publish(item)
-        except RuntimeError as e:
-            errores += 1
-            print(f"  ✗ {e}")
+    # GitHub no garantiza el cron: a veces pasan horas entre corridas. Por eso cada
+    # corrida se queda despierta hasta IG_HORIZONTE_MIN minutos publicando lo que vaya
+    # venciendo, y guarda el registro en el repo después de cada publicación.
+    inicio = time.time()
+    horizonte = int(os.environ.get("IG_HORIZONTE_MIN", "300")) * 60
+    fallidos, errores = set(), 0
+    while True:
+        sync_repo()
+        queue = load_queue()
+        done = json.load(open(DONE, encoding="utf-8")) if os.path.exists(DONE) else {}
+        now = datetime.now(timezone.utc)
+        activos = [it for it in queue if it["id"] not in done and it["id"] not in fallidos and it.get("aprobado")]
+        pend = sorted((it for it in activos if datetime.fromisoformat(it["fecha"]) <= now), key=lambda it: it["fecha"])
+        for item in pend[:MAX_POR_CORRIDA]:
+            pid = item["id"]
+            print(f"Publicando {pid} ({item.get('tipo', 'post')}) programado para {item['fecha']}…", flush=True)
+            try:
+                media_id = publish(item)
+            except RuntimeError as e:
+                errores += 1
+                fallidos.add(pid)
+                print(f"  ✗ {e}", flush=True)
+                continue
+            done = json.load(open(DONE, encoding="utf-8")) if os.path.exists(DONE) else {}
+            done[pid] = {"media_id": media_id, "publicado": datetime.now(timezone.utc).isoformat(timespec="seconds")}
+            json.dump(done, open(DONE, "w", encoding="utf-8"), indent=2, ensure_ascii=False)
+            guardar_registro(pid)
+            print(f"  ok -> media {media_id}", flush=True)
+            time.sleep(20)
+        if len(pend) > MAX_POR_CORRIDA:
             continue
-        done[pid] = {"media_id": media_id, "publicado": now.isoformat(timespec="seconds")}
-        json.dump(done, open(DONE, "w", encoding="utf-8"), indent=2, ensure_ascii=False)
-        print(f"  ok -> media {media_id}")
-        time.sleep(20)
-    if len(pend) > MAX_POR_CORRIDA:
-        print(f"Quedan {len(pend) - MAX_POR_CORRIDA} para la próxima corrida.")
+        futuros = sorted(datetime.fromisoformat(it["fecha"]) for it in activos
+                         if datetime.fromisoformat(it["fecha"]) > datetime.now(timezone.utc))
+        if not futuros:
+            print("No queda nada aprobado en la cola.")
+            break
+        espera = (futuros[0] - datetime.now(timezone.utc)).total_seconds()
+        if time.time() + espera > inicio + horizonte:
+            print(f"Lo siguiente sale {futuros[0].isoformat()}; queda para otra corrida.")
+            break
+        print(f"Esperando {int(espera // 60)} min hasta {futuros[0].isoformat()}…", flush=True)
+        time.sleep(max(5, espera + 5))
     if errores:
         sys.exit(1)
 
+
+def git(*args):
+    return subprocess.run(["git", *args], cwd=ROOT, capture_output=True, text=True)
+
+
+def sync_repo():
+    """Trae cambios de la cola (por ejemplo, una pausa) antes de cada ciclo."""
+    if os.environ.get("GITHUB_ACTIONS"):
+        git("pull", "--rebase", "-q", "origin", "HEAD")
+
+
+def guardar_registro(pid):
+    if not os.environ.get("GITHUB_ACTIONS"):
+        return
+    git("config", "user.name", "torote-bot")
+    git("config", "user.email", "torote-bot@users.noreply.github.com")
+    git("add", "ig/published.json")
+    git("commit", "-q", "-m", f"IG: publicado {pid}")
+    for _ in range(3):
+        if git("push", "-q").returncode == 0:
+            return
+        git("pull", "--rebase", "-q", "origin", "HEAD")
+    print("  (aviso: no se pudo subir el registro; se reintenta en el siguiente ciclo)")
 
 if __name__ == "__main__":
     main()
