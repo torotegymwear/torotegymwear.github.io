@@ -592,5 +592,595 @@
     ],
     "caption": "",
     "aprobado": true
+  },
+  {
+    "id": "w44_lun1_week44",
+    "tipo": "post",
+    "fecha": "2026-10-26T07:00:00-05:00",
+    "archivos": [
+      "w44_lun1_week44.jpg"
+    ],
+    "caption": "Semana 44. Lunes de pierna.\n#torote #torotegymwear #madeinecuador #gymquito",
+    "aprobado": true
+  },
+  {
+    "id": "w44_S_lun1_dia",
+    "tipo": "story",
+    "fecha": "2026-10-26T08:30:00-05:00",
+    "archivos": [
+      "w44_S_lun1_dia.jpg"
+    ],
+    "caption": "",
+    "aprobado": true
+  },
+  {
+    "id": "w44_S_lun2_producto",
+    "tipo": "story",
+    "fecha": "2026-10-26T11:00:00-05:00",
+    "archivos": [
+      "w44_S_lun2_producto.jpg"
+    ],
+    "caption": "",
+    "aprobado": true
+  },
+  {
+    "id": "w44_lun2_hoodies",
+    "tipo": "carrusel",
+    "fecha": "2026-10-26T12:30:00-05:00",
+    "archivos": [
+      "w44_lun2_hoodies_1.jpg",
+      "w44_lun2_hoodies_2.jpg",
+      "w44_lun2_hoodies_3.jpg",
+      "w44_lun2_hoodies_4.jpg",
+      "w44_lun2_hoodies_5.jpg",
+      "w44_lun2_hoodies_6.jpg",
+      "w44_lun2_hoodies_7.jpg",
+      "w44_lun2_hoodies_8.jpg",
+      "w44_lun2_hoodies_9.jpg",
+      "w44_lun2_hoodies_10.jpg"
+    ],
+    "caption": "Chompas TOROTE: hoodies Gym Wear, hoodies de malla, buzos Sports Wear y Fit Wear. $45 cada una, IVA incluido.\nPedidos: link en bio.\n#torote #torotegymwear #madeinecuador #gymquito",
+    "aprobado": true
+  },
+  {
+    "id": "w44_S_lun3_frase",
+    "tipo": "story",
+    "fecha": "2026-10-26T15:00:00-05:00",
+    "archivos": [
+      "w44_S_lun3_frase.jpg"
+    ],
+    "caption": "",
+    "aprobado": true
+  },
+  {
+    "id": "w44_S_lun4_foto",
+    "tipo": "story",
+    "fecha": "2026-10-26T18:00:00-05:00",
+    "archivos": [
+      "w44_S_lun4_foto.jpg"
+    ],
+    "caption": "",
+    "aprobado": true
+  },
+  {
+    "id": "w44_lun3_R1_layers",
+    "tipo": "reel",
+    "fecha": "2026-10-26T19:30:00-05:00",
+    "archivos": [
+      "w44_R1_layers.mp4"
+    ],
+    "caption": "Hoodies, buzos y chompas TOROTE: $45. Hechos en Ecuador.\nPedidos: link en bio.\n#torote #torotegymwear #madeinecuador #gymquito",
+    "aprobado": true,
+    "portada_ms": 600
+  },
+  {
+    "id": "w44_S_lun5_pedido",
+    "tipo": "story",
+    "fecha": "2026-10-26T21:00:00-05:00",
+    "archivos": [
+      "w44_S_lun5_pedido.jpg"
+    ],
+    "caption": "",
+    "aprobado": true
+  },
+  {
+    "id": "w44_mar1_log",
+    "tipo": "post",
+    "fecha": "2026-10-27T07:00:00-05:00",
+    "archivos": [
+      "w44_mar1_log.jpg"
+    ],
+    "caption": "Anota peso, series y reps. La próxima sesión parte de ese número.\n#torote #torotegymwear #madeinecuador #gymquito",
+    "aprobado": true
+  },
+  {
+    "id": "w44_S_mar1_dia",
+    "tipo": "story",
+    "fecha": "2026-10-27T08:30:00-05:00",
+    "archivos": [
+      "w44_S_mar1_dia.jpg"
+    ],
+    "caption": "",
+    "aprobado": true
+  },
+  {
+    "id": "w44_S_mar2_producto",
+    "tipo": "story",
+    "fecha": "2026-10-27T11:00:00-05:00",
+    "archivos": [
+      "w44_S_mar2_producto.jpg"
+    ],
+    "caption": "",
+    "aprobado": true
+  },
+  {
+    "id": "w44_mar2_toalla",
+    "tipo": "post",
+    "fecha": "2026-10-27T12:30:00-05:00",
+    "archivos": [
+      "w44_mar2_toalla.jpg"
+    ],
+    "caption": "Toalla TOROTE Gym Wear. $25.\nPara la banca y las máquinas.\nPedidos: link en bio.\n#torote #torotegymwear #madeinecuador #gymquito",
+    "aprobado": true
+  },
+  {
+    "id": "w44_S_mar3_pregunta",
+    "tipo": "story",
+    "fecha": "2026-10-27T15:00:00-05:00",
+    "archivos": [
+      "w44_S_mar3_pregunta.jpg"
+    ],
+    "caption": "",
+    "aprobado": true
+  },
+  {
+    "id": "w44_S_mar4_foto",
+    "tipo": "story",
+    "fecha": "2026-10-27T18:00:00-05:00",
+    "archivos": [
+      "w44_S_mar4_foto.jpg"
+    ],
+    "caption": "",
+    "aprobado": true
+  },
+  {
+    "id": "w44_mar3_rest",
+    "tipo": "post",
+    "fecha": "2026-10-27T19:30:00-05:00",
+    "archivos": [
+      "w44_mar3_rest.jpg"
+    ],
+    "caption": "Entre series: 90 segundos.\n#torote #torotegymwear #madeinecuador #gymquito",
+    "aprobado": true
+  },
+  {
+    "id": "w44_S_mar5_pedido",
+    "tipo": "story",
+    "fecha": "2026-10-27T21:00:00-05:00",
+    "archivos": [
+      "w44_S_mar5_pedido.jpg"
+    ],
+    "caption": "",
+    "aprobado": true
+  },
+  {
+    "id": "w44_mie1_gorra",
+    "tipo": "post",
+    "fecha": "2026-10-28T07:00:00-05:00",
+    "archivos": [
+      "w44_mie1_gorra.jpg"
+    ],
+    "caption": "Gorra Gym Wear dorada. $20.\nPedidos: link en bio.\n#torote #torotegymwear #madeinecuador #gymquito",
+    "aprobado": true
+  },
+  {
+    "id": "w44_S_mie1_dia",
+    "tipo": "story",
+    "fecha": "2026-10-28T08:30:00-05:00",
+    "archivos": [
+      "w44_S_mie1_dia.jpg"
+    ],
+    "caption": "",
+    "aprobado": true
+  },
+  {
+    "id": "w44_S_mie2_producto",
+    "tipo": "story",
+    "fecha": "2026-10-28T11:00:00-05:00",
+    "archivos": [
+      "w44_S_mie2_producto.jpg"
+    ],
+    "caption": "",
+    "aprobado": true
+  },
+  {
+    "id": "w44_mie2_tanks",
+    "tipo": "carrusel",
+    "fecha": "2026-10-28T12:30:00-05:00",
+    "archivos": [
+      "w44_mie2_tanks_1.jpg",
+      "w44_mie2_tanks_2.jpg",
+      "w44_mie2_tanks_3.jpg",
+      "w44_mie2_tanks_4.jpg",
+      "w44_mie2_tanks_5.jpg"
+    ],
+    "caption": "Tanks TOROTE: militar, roja y negra. $30, IVA incluido.\nPedidos: link en bio.\n#torote #torotegymwear #madeinecuador #gymquito",
+    "aprobado": true
+  },
+  {
+    "id": "w44_S_mie3_frase",
+    "tipo": "story",
+    "fecha": "2026-10-28T15:00:00-05:00",
+    "archivos": [
+      "w44_S_mie3_frase.jpg"
+    ],
+    "caption": "",
+    "aprobado": true
+  },
+  {
+    "id": "w44_S_mie4_foto",
+    "tipo": "story",
+    "fecha": "2026-10-28T18:00:00-05:00",
+    "archivos": [
+      "w44_S_mie4_foto.jpg"
+    ],
+    "caption": "",
+    "aprobado": true
+  },
+  {
+    "id": "w44_mie3_R2_tees_tanks",
+    "tipo": "reel",
+    "fecha": "2026-10-28T19:30:00-05:00",
+    "archivos": [
+      "w44_R2_tees_tanks.mp4"
+    ],
+    "caption": "Camisetas y tanks, $30. Hechas en Ecuador.\nPedidos: link en bio.\n#torote #torotegymwear #madeinecuador #gymquito",
+    "aprobado": true,
+    "portada_ms": 600
+  },
+  {
+    "id": "w44_S_mie5_pedido",
+    "tipo": "story",
+    "fecha": "2026-10-28T21:00:00-05:00",
+    "archivos": [
+      "w44_S_mie5_pedido.jpg"
+    ],
+    "caption": "",
+    "aprobado": true
+  },
+  {
+    "id": "w44_jue1_negatives",
+    "tipo": "post",
+    "fecha": "2026-10-29T07:00:00-05:00",
+    "archivos": [
+      "w44_jue1_negatives.jpg"
+    ],
+    "caption": "Baja en tres segundos, sube normal. Menos peso, más control.\n#torote #torotegymwear #madeinecuador #gymquito",
+    "aprobado": true
+  },
+  {
+    "id": "w44_S_jue1_dia",
+    "tipo": "story",
+    "fecha": "2026-10-29T08:30:00-05:00",
+    "archivos": [
+      "w44_S_jue1_dia.jpg"
+    ],
+    "caption": "",
+    "aprobado": true
+  },
+  {
+    "id": "w44_S_jue2_producto",
+    "tipo": "story",
+    "fecha": "2026-10-29T11:00:00-05:00",
+    "archivos": [
+      "w44_S_jue2_producto.jpg"
+    ],
+    "caption": "",
+    "aprobado": true
+  },
+  {
+    "id": "w44_jue2_malla",
+    "tipo": "post",
+    "fecha": "2026-10-29T12:30:00-05:00",
+    "archivos": [
+      "w44_jue2_malla.jpg"
+    ],
+    "caption": "Hoodie de malla gris. $45.\nTambién en negro.\nPedidos: link en bio.\n#torote #torotegymwear #madeinecuador #gymquito",
+    "aprobado": true
+  },
+  {
+    "id": "w44_S_jue3_pregunta",
+    "tipo": "story",
+    "fecha": "2026-10-29T15:00:00-05:00",
+    "archivos": [
+      "w44_S_jue3_pregunta.jpg"
+    ],
+    "caption": "",
+    "aprobado": true
+  },
+  {
+    "id": "w44_S_jue4_foto",
+    "tipo": "story",
+    "fecha": "2026-10-29T18:00:00-05:00",
+    "archivos": [
+      "w44_S_jue4_foto.jpg"
+    ],
+    "caption": "",
+    "aprobado": true
+  },
+  {
+    "id": "w44_jue3_R3_pull_day",
+    "tipo": "reel",
+    "fecha": "2026-10-29T19:30:00-05:00",
+    "archivos": [
+      "w44_R3_pull_day.mp4"
+    ],
+    "caption": "Pull day.\nStraps TOROTE, $20. Pedidos: link en bio.\n#torote #torotegymwear #madeinecuador #gymquito",
+    "aprobado": true,
+    "portada_ms": 300
+  },
+  {
+    "id": "w44_S_jue5_pedido",
+    "tipo": "story",
+    "fecha": "2026-10-29T21:00:00-05:00",
+    "archivos": [
+      "w44_S_jue5_pedido.jpg"
+    ],
+    "caption": "",
+    "aprobado": true
+  },
+  {
+    "id": "w44_vie1_hood_up",
+    "tipo": "post",
+    "fecha": "2026-10-30T07:00:00-05:00",
+    "archivos": [
+      "w44_vie1_hood_up.jpg"
+    ],
+    "caption": "6 a.m. en Quito.\n#torote #torotegymwear #madeinecuador #gymquito",
+    "aprobado": true
+  },
+  {
+    "id": "w44_S_vie1_dia",
+    "tipo": "story",
+    "fecha": "2026-10-30T08:30:00-05:00",
+    "archivos": [
+      "w44_S_vie1_dia.jpg"
+    ],
+    "caption": "",
+    "aprobado": true
+  },
+  {
+    "id": "w44_S_vie2_producto",
+    "tipo": "story",
+    "fecha": "2026-10-30T11:00:00-05:00",
+    "archivos": [
+      "w44_S_vie2_producto.jpg"
+    ],
+    "caption": "",
+    "aprobado": true
+  },
+  {
+    "id": "w44_vie2_tees",
+    "tipo": "carrusel",
+    "fecha": "2026-10-30T12:30:00-05:00",
+    "archivos": [
+      "w44_vie2_tees_1.jpg",
+      "w44_vie2_tees_2.jpg",
+      "w44_vie2_tees_3.jpg",
+      "w44_vie2_tees_4.jpg",
+      "w44_vie2_tees_5.jpg"
+    ],
+    "caption": "Camisetas TOROTE: Strong Soul, Squats y Fit Girl. $30, IVA incluido.\nPedidos: link en bio.\n#torote #torotegymwear #madeinecuador #gymquito",
+    "aprobado": true
+  },
+  {
+    "id": "w44_S_vie3_frase",
+    "tipo": "story",
+    "fecha": "2026-10-30T15:00:00-05:00",
+    "archivos": [
+      "w44_S_vie3_frase.jpg"
+    ],
+    "caption": "",
+    "aprobado": true
+  },
+  {
+    "id": "w44_S_vie4_foto",
+    "tipo": "story",
+    "fecha": "2026-10-30T18:00:00-05:00",
+    "archivos": [
+      "w44_S_vie4_foto.jpg"
+    ],
+    "caption": "",
+    "aprobado": true
+  },
+  {
+    "id": "w44_vie3_hoodie_rojo",
+    "tipo": "post",
+    "fecha": "2026-10-30T19:30:00-05:00",
+    "archivos": [
+      "w44_vie3_hoodie_rojo.jpg"
+    ],
+    "caption": "Hoodie Gym Wear rojo. $45.\nTambién en negro.\nPedidos: link en bio.\n#torote #torotegymwear #madeinecuador #gymquito",
+    "aprobado": true
+  },
+  {
+    "id": "w44_S_vie5_pedido",
+    "tipo": "story",
+    "fecha": "2026-10-30T21:00:00-05:00",
+    "archivos": [
+      "w44_S_vie5_pedido.jpg"
+    ],
+    "caption": "",
+    "aprobado": true
+  },
+  {
+    "id": "w44_sab1_buzo",
+    "tipo": "post",
+    "fecha": "2026-10-31T07:00:00-05:00",
+    "archivos": [
+      "w44_sab1_buzo.jpg"
+    ],
+    "caption": "Buzo Sports Wear azul. $45.\nTambién en rojo.\nPedidos: link en bio.\n#torote #torotegymwear #madeinecuador #gymquito",
+    "aprobado": true
+  },
+  {
+    "id": "w44_S_sab1_dia",
+    "tipo": "story",
+    "fecha": "2026-10-31T08:30:00-05:00",
+    "archivos": [
+      "w44_S_sab1_dia.jpg"
+    ],
+    "caption": "",
+    "aprobado": true
+  },
+  {
+    "id": "w44_S_sab2_producto",
+    "tipo": "story",
+    "fecha": "2026-10-31T11:00:00-05:00",
+    "archivos": [
+      "w44_S_sab2_producto.jpg"
+    ],
+    "caption": "",
+    "aprobado": true
+  },
+  {
+    "id": "w44_sab2_order",
+    "tipo": "carrusel",
+    "fecha": "2026-10-31T12:30:00-05:00",
+    "archivos": [
+      "w44_sab2_order_1.jpg",
+      "w44_sab2_order_2.jpg",
+      "w44_sab2_order_3.jpg",
+      "w44_sab2_order_4.jpg",
+      "w44_sab2_order_5.jpg"
+    ],
+    "caption": "Cómo pedir:\n1. Link en bio\n2. Eliges prenda, color y talla\n3. El pedido llega a nuestro WhatsApp\n4. Retiro en la USFQ o envío\n#torote #torotegymwear #madeinecuador #gymquito",
+    "aprobado": true
+  },
+  {
+    "id": "w44_S_sab3_pregunta",
+    "tipo": "story",
+    "fecha": "2026-10-31T15:00:00-05:00",
+    "archivos": [
+      "w44_S_sab3_pregunta.jpg"
+    ],
+    "caption": "",
+    "aprobado": true
+  },
+  {
+    "id": "w44_S_sab4_foto",
+    "tipo": "story",
+    "fecha": "2026-10-31T18:00:00-05:00",
+    "archivos": [
+      "w44_S_sab4_foto.jpg"
+    ],
+    "caption": "",
+    "aprobado": true
+  },
+  {
+    "id": "w44_sab3_R4_bag",
+    "tipo": "reel",
+    "fecha": "2026-10-31T19:30:00-05:00",
+    "archivos": [
+      "w44_R4_bag.mp4"
+    ],
+    "caption": "Toalla, straps, camiseta y gorra. Maletas TOROTE desde $55.\nPedidos: link en bio.\n#torote #torotegymwear #madeinecuador #gymquito",
+    "aprobado": true,
+    "portada_ms": 500
+  },
+  {
+    "id": "w44_S_sab5_pedido",
+    "tipo": "story",
+    "fecha": "2026-10-31T21:00:00-05:00",
+    "archivos": [
+      "w44_S_sab5_pedido.jpg"
+    ],
+    "caption": "",
+    "aprobado": true
+  },
+  {
+    "id": "w44_dom1_walk",
+    "tipo": "post",
+    "fecha": "2026-11-01T07:00:00-05:00",
+    "archivos": [
+      "w44_dom1_walk.jpg"
+    ],
+    "caption": "Domingo: caminar, comer bien y dormir temprano.\n#torote #torotegymwear #madeinecuador #gymquito",
+    "aprobado": true
+  },
+  {
+    "id": "w44_S_dom1_dia",
+    "tipo": "story",
+    "fecha": "2026-11-01T08:30:00-05:00",
+    "archivos": [
+      "w44_S_dom1_dia.jpg"
+    ],
+    "caption": "",
+    "aprobado": true
+  },
+  {
+    "id": "w44_S_dom2_producto",
+    "tipo": "story",
+    "fecha": "2026-11-01T11:00:00-05:00",
+    "archivos": [
+      "w44_S_dom2_producto.jpg"
+    ],
+    "caption": "",
+    "aprobado": true
+  },
+  {
+    "id": "w44_dom2_bag",
+    "tipo": "carrusel",
+    "fecha": "2026-11-01T12:30:00-05:00",
+    "archivos": [
+      "w44_dom2_bag_1.jpg",
+      "w44_dom2_bag_2.jpg",
+      "w44_dom2_bag_3.jpg",
+      "w44_dom2_bag_4.jpg",
+      "w44_dom2_bag_5.jpg",
+      "w44_dom2_bag_6.jpg"
+    ],
+    "caption": "Toalla, straps, camiseta de cambio y gorra.\nMaletas TOROTE desde $55.\nPedidos: link en bio.\n#torote #torotegymwear #madeinecuador #gymquito",
+    "aprobado": true
+  },
+  {
+    "id": "w44_S_dom3_frase",
+    "tipo": "story",
+    "fecha": "2026-11-01T15:00:00-05:00",
+    "archivos": [
+      "w44_S_dom3_frase.jpg"
+    ],
+    "caption": "",
+    "aprobado": true
+  },
+  {
+    "id": "w44_S_dom4_foto",
+    "tipo": "story",
+    "fecha": "2026-11-01T18:00:00-05:00",
+    "archivos": [
+      "w44_S_dom4_foto.jpg"
+    ],
+    "caption": "",
+    "aprobado": true
+  },
+  {
+    "id": "w44_dom3_legs",
+    "tipo": "post",
+    "fecha": "2026-11-01T19:30:00-05:00",
+    "archivos": [
+      "w44_dom3_legs.jpg"
+    ],
+    "caption": "Mañana: pierna.\n#torote #torotegymwear #madeinecuador #gymquito",
+    "aprobado": true
+  },
+  {
+    "id": "w44_S_dom5_pedido",
+    "tipo": "story",
+    "fecha": "2026-11-01T21:00:00-05:00",
+    "archivos": [
+      "w44_S_dom5_pedido.jpg"
+    ],
+    "caption": "",
+    "aprobado": true
   }
 ]
