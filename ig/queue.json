@@ -1182,5 +1182,570 @@
     ],
     "caption": "",
     "aprobado": true
+  },
+  {
+    "id": "w45_S_lun2_producto",
+    "tipo": "story",
+    "fecha": "2026-11-02T16:30:00-05:00",
+    "archivos": [
+      "w45_S_lun2_producto.jpg"
+    ],
+    "caption": "",
+    "aprobado": true
+  },
+  {
+    "id": "w45_lun2_straps",
+    "tipo": "carrusel",
+    "fecha": "2026-11-02T16:00:00-05:00",
+    "archivos": [
+      "w45_lun2_straps_1.jpg",
+      "w45_lun2_straps_2.jpg",
+      "w45_lun2_straps_3.jpg",
+      "w45_lun2_straps_4.jpg",
+      "w45_lun2_straps_5.jpg",
+      "w45_lun2_straps_6.jpg"
+    ],
+    "caption": "Straps TOROTE: rojos, verde lima, verde militar y rosa neón. $20 el par, IVA incluido.\nPedidos: link en bio.\n#torote #torotegymwear #madeinecuador #gymquito",
+    "aprobado": true
+  },
+  {
+    "id": "w45_S_lun3_pregunta",
+    "tipo": "story",
+    "fecha": "2026-11-02T15:00:00-05:00",
+    "archivos": [
+      "w45_S_lun3_pregunta.jpg"
+    ],
+    "caption": "",
+    "aprobado": true
+  },
+  {
+    "id": "w45_S_lun4_foto",
+    "tipo": "story",
+    "fecha": "2026-11-02T18:00:00-05:00",
+    "archivos": [
+      "w45_S_lun4_foto.jpg"
+    ],
+    "caption": "",
+    "aprobado": true
+  },
+  {
+    "id": "w45_lun3_R1_fit_check",
+    "tipo": "reel",
+    "fecha": "2026-11-02T19:30:00-05:00",
+    "archivos": [
+      "w45_R1_fit_check.mp4"
+    ],
+    "caption": "Fit check en estudio. Ropa TOROTE hecha en Ecuador.\nPedidos: link en bio.\n#torote #torotegymwear #madeinecuador #gymquito",
+    "aprobado": true,
+    "portada_ms": 600
+  },
+  {
+    "id": "w45_S_lun5_pedido",
+    "tipo": "story",
+    "fecha": "2026-11-02T21:00:00-05:00",
+    "archivos": [
+      "w45_S_lun5_pedido.jpg"
+    ],
+    "caption": "",
+    "aprobado": true
+  },
+  {
+    "id": "w45_mar1_brace",
+    "tipo": "post",
+    "fecha": "2026-11-03T07:00:00-05:00",
+    "archivos": [
+      "w45_mar1_brace.jpg"
+    ],
+    "caption": "Antes de bajar: aire, abdomen firme y recién ahí empieza la rep.\n#torote #torotegymwear #madeinecuador #gymquito",
+    "aprobado": true
+  },
+  {
+    "id": "w45_S_mar1_dia",
+    "tipo": "story",
+    "fecha": "2026-11-03T08:30:00-05:00",
+    "archivos": [
+      "w45_S_mar1_dia.jpg"
+    ],
+    "caption": "",
+    "aprobado": true
+  },
+  {
+    "id": "w45_S_mar2_producto",
+    "tipo": "story",
+    "fecha": "2026-11-03T11:00:00-05:00",
+    "archivos": [
+      "w45_S_mar2_producto.jpg"
+    ],
+    "caption": "",
+    "aprobado": true
+  },
+  {
+    "id": "w45_mar2_cilindrica",
+    "tipo": "post",
+    "fecha": "2026-11-03T12:30:00-05:00",
+    "archivos": [
+      "w45_mar2_cilindrica.jpg"
+    ],
+    "caption": "Maleta cilíndrica roja. $55.\nTambién en negro.\nPedidos: link en bio.\n#torote #torotegymwear #madeinecuador #gymquito",
+    "aprobado": true
+  },
+  {
+    "id": "w45_S_mar3_frase",
+    "tipo": "story",
+    "fecha": "2026-11-03T15:00:00-05:00",
+    "archivos": [
+      "w45_S_mar3_frase.jpg"
+    ],
+    "caption": "",
+    "aprobado": true
+  },
+  {
+    "id": "w45_S_mar4_foto",
+    "tipo": "story",
+    "fecha": "2026-11-03T18:00:00-05:00",
+    "archivos": [
+      "w45_S_mar4_foto.jpg"
+    ],
+    "caption": "",
+    "aprobado": true
+  },
+  {
+    "id": "w45_mar3_after",
+    "tipo": "post",
+    "fecha": "2026-11-03T19:30:00-05:00",
+    "archivos": [
+      "w45_mar3_after.jpg"
+    ],
+    "caption": "Después del entreno. Maletas TOROTE desde $55.\nPedidos: link en bio.\n#torote #torotegymwear #madeinecuador #gymquito",
+    "aprobado": true
+  },
+  {
+    "id": "w45_S_mar5_pedido",
+    "tipo": "story",
+    "fecha": "2026-11-03T21:00:00-05:00",
+    "archivos": [
+      "w45_S_mar5_pedido.jpg"
+    ],
+    "caption": "",
+    "aprobado": true
+  },
+  {
+    "id": "w45_mie1_roja_toro",
+    "tipo": "post",
+    "fecha": "2026-11-04T07:00:00-05:00",
+    "archivos": [
+      "w45_mie1_roja_toro.jpg"
+    ],
+    "caption": "Gorra Roja Toro. $20.\nPedidos: link en bio.\n#torote #torotegymwear #madeinecuador #gymquito",
+    "aprobado": true
+  },
+  {
+    "id": "w45_S_mie1_dia",
+    "tipo": "story",
+    "fecha": "2026-11-04T08:30:00-05:00",
+    "archivos": [
+      "w45_S_mie1_dia.jpg"
+    ],
+    "caption": "",
+    "aprobado": true
+  },
+  {
+    "id": "w45_S_mie2_producto",
+    "tipo": "story",
+    "fecha": "2026-11-04T11:00:00-05:00",
+    "archivos": [
+      "w45_S_mie2_producto.jpg"
+    ],
+    "caption": "",
+    "aprobado": true
+  },
+  {
+    "id": "w45_mie2_R2_caps",
+    "tipo": "reel",
+    "fecha": "2026-11-04T12:30:00-05:00",
+    "archivos": [
+      "w45_R2_caps.mp4"
+    ],
+    "caption": "Doce gorras TOROTE, $20 cada una. Hechas en Ecuador.\nPedidos: link en bio.\n#torote #torotegymwear #madeinecuador #gymquito",
+    "aprobado": true,
+    "portada_ms": 600
+  },
+  {
+    "id": "w45_S_mie3_frase",
+    "tipo": "story",
+    "fecha": "2026-11-04T15:00:00-05:00",
+    "archivos": [
+      "w45_S_mie3_frase.jpg"
+    ],
+    "caption": "",
+    "aprobado": true
+  },
+  {
+    "id": "w45_S_mie4_foto",
+    "tipo": "story",
+    "fecha": "2026-11-04T18:00:00-05:00",
+    "archivos": [
+      "w45_S_mie4_foto.jpg"
+    ],
+    "caption": "",
+    "aprobado": true
+  },
+  {
+    "id": "w45_mie3_midweek",
+    "tipo": "post",
+    "fecha": "2026-11-04T19:30:00-05:00",
+    "archivos": [
+      "w45_mie3_midweek.jpg"
+    ],
+    "caption": "Mitad de semana. Mismo plan del lunes.\n#torote #torotegymwear #madeinecuador #gymquito",
+    "aprobado": true
+  },
+  {
+    "id": "w45_S_mie5_pedido",
+    "tipo": "story",
+    "fecha": "2026-11-04T21:00:00-05:00",
+    "archivos": [
+      "w45_S_mie5_pedido.jpg"
+    ],
+    "caption": "",
+    "aprobado": true
+  },
+  {
+    "id": "w45_jue1_towels",
+    "tipo": "carrusel",
+    "fecha": "2026-11-05T07:00:00-05:00",
+    "archivos": [
+      "w45_jue1_towels_1.jpg",
+      "w45_jue1_towels_2.jpg",
+      "w45_jue1_towels_3.jpg",
+      "w45_jue1_towels_4.jpg",
+      "w45_jue1_towels_5.jpg",
+      "w45_jue1_towels_6.jpg",
+      "w45_jue1_towels_7.jpg"
+    ],
+    "caption": "Toallas TOROTE: negra, letras XL, amarilla, roja y Gym Wear. $25, IVA incluido.\nPedidos: link en bio.\n#torote #torotegymwear #madeinecuador #gymquito",
+    "aprobado": true
+  },
+  {
+    "id": "w45_S_jue1_dia",
+    "tipo": "story",
+    "fecha": "2026-11-05T08:30:00-05:00",
+    "archivos": [
+      "w45_S_jue1_dia.jpg"
+    ],
+    "caption": "",
+    "aprobado": true
+  },
+  {
+    "id": "w45_S_jue2_producto",
+    "tipo": "story",
+    "fecha": "2026-11-05T11:00:00-05:00",
+    "archivos": [
+      "w45_S_jue2_producto.jpg"
+    ],
+    "caption": "",
+    "aprobado": true
+  },
+  {
+    "id": "w45_jue2_rir",
+    "tipo": "post",
+    "fecha": "2026-11-05T12:30:00-05:00",
+    "archivos": [
+      "w45_jue2_rir.jpg"
+    ],
+    "caption": "Cierra la serie con dos reps en reserva cuando la técnica empieza a cambiar.\n#torote #torotegymwear #madeinecuador #gymquito",
+    "aprobado": true
+  },
+  {
+    "id": "w45_S_jue3_pregunta",
+    "tipo": "story",
+    "fecha": "2026-11-05T15:00:00-05:00",
+    "archivos": [
+      "w45_S_jue3_pregunta.jpg"
+    ],
+    "caption": "",
+    "aprobado": true
+  },
+  {
+    "id": "w45_S_jue4_foto",
+    "tipo": "story",
+    "fecha": "2026-11-05T18:00:00-05:00",
+    "archivos": [
+      "w45_S_jue4_foto.jpg"
+    ],
+    "caption": "",
+    "aprobado": true
+  },
+  {
+    "id": "w45_jue3_R3_deadlift",
+    "tipo": "reel",
+    "fecha": "2026-11-05T19:30:00-05:00",
+    "archivos": [
+      "w45_R3_deadlift.mp4"
+    ],
+    "caption": "Peso muerto con straps.\nStraps TOROTE, $20. Pedidos: link en bio.\n#torote #torotegymwear #madeinecuador #gymquito",
+    "aprobado": true,
+    "portada_ms": 300
+  },
+  {
+    "id": "w45_S_jue5_pedido",
+    "tipo": "story",
+    "fecha": "2026-11-05T21:00:00-05:00",
+    "archivos": [
+      "w45_S_jue5_pedido.jpg"
+    ],
+    "caption": "",
+    "aprobado": true
+  },
+  {
+    "id": "w45_vie1_friday",
+    "tipo": "post",
+    "fecha": "2026-11-06T07:00:00-05:00",
+    "archivos": [
+      "w45_vie1_friday.jpg"
+    ],
+    "caption": "Viernes. Última sesión pesada de la semana.\n#torote #torotegymwear #madeinecuador #gymquito",
+    "aprobado": true
+  },
+  {
+    "id": "w45_S_vie1_dia",
+    "tipo": "story",
+    "fecha": "2026-11-06T08:30:00-05:00",
+    "archivos": [
+      "w45_S_vie1_dia.jpg"
+    ],
+    "caption": "",
+    "aprobado": true
+  },
+  {
+    "id": "w45_S_vie2_producto",
+    "tipo": "story",
+    "fecha": "2026-11-06T11:00:00-05:00",
+    "archivos": [
+      "w45_S_vie2_producto.jpg"
+    ],
+    "caption": "",
+    "aprobado": true
+  },
+  {
+    "id": "w45_vie2_naranja",
+    "tipo": "post",
+    "fecha": "2026-11-06T12:30:00-05:00",
+    "archivos": [
+      "w45_vie2_naranja.jpg"
+    ],
+    "caption": "Maleta naranja. $65.\nPedidos: link en bio.\n#torote #torotegymwear #madeinecuador #gymquito",
+    "aprobado": true
+  },
+  {
+    "id": "w45_S_vie3_frase",
+    "tipo": "story",
+    "fecha": "2026-11-06T15:00:00-05:00",
+    "archivos": [
+      "w45_S_vie3_frase.jpg"
+    ],
+    "caption": "",
+    "aprobado": true
+  },
+  {
+    "id": "w45_S_vie4_foto",
+    "tipo": "story",
+    "fecha": "2026-11-06T18:00:00-05:00",
+    "archivos": [
+      "w45_S_vie4_foto.jpg"
+    ],
+    "caption": "",
+    "aprobado": true
+  },
+  {
+    "id": "w45_vie3_kit",
+    "tipo": "carrusel",
+    "fecha": "2026-11-06T19:30:00-05:00",
+    "archivos": [
+      "w45_vie3_kit_1.jpg",
+      "w45_vie3_kit_2.jpg",
+      "w45_vie3_kit_3.jpg",
+      "w45_vie3_kit_4.jpg",
+      "w45_vie3_kit_5.jpg",
+      "w45_vie3_kit_6.jpg",
+      "w45_vie3_kit_7.jpg"
+    ],
+    "caption": "Kit Bravura: gorra, straps, toalla y maleta con correa. $130, IVA incluido.\nEs la suma de las cuatro piezas en un solo pedido.\nPedidos: link en bio.\n#torote #torotegymwear #madeinecuador #gymquito",
+    "aprobado": true
+  },
+  {
+    "id": "w45_S_vie5_pedido",
+    "tipo": "story",
+    "fecha": "2026-11-06T21:00:00-05:00",
+    "archivos": [
+      "w45_S_vie5_pedido.jpg"
+    ],
+    "caption": "",
+    "aprobado": true
+  },
+  {
+    "id": "w45_sab1_negra_roja",
+    "tipo": "post",
+    "fecha": "2026-11-07T07:00:00-05:00",
+    "archivos": [
+      "w45_sab1_negra_roja.jpg"
+    ],
+    "caption": "Maleta negra y roja. $65.\nPedidos: link en bio.\n#torote #torotegymwear #madeinecuador #gymquito",
+    "aprobado": true
+  },
+  {
+    "id": "w45_S_sab1_dia",
+    "tipo": "story",
+    "fecha": "2026-11-07T08:30:00-05:00",
+    "archivos": [
+      "w45_S_sab1_dia.jpg"
+    ],
+    "caption": "",
+    "aprobado": true
+  },
+  {
+    "id": "w45_S_sab2_producto",
+    "tipo": "story",
+    "fecha": "2026-11-07T11:00:00-05:00",
+    "archivos": [
+      "w45_S_sab2_producto.jpg"
+    ],
+    "caption": "",
+    "aprobado": true
+  },
+  {
+    "id": "w45_sab2_weekend",
+    "tipo": "post",
+    "fecha": "2026-11-07T12:30:00-05:00",
+    "archivos": [
+      "w45_sab2_weekend.jpg"
+    ],
+    "caption": "Sábado: hombro y brazo, 3 × 12.\n#torote #torotegymwear #madeinecuador #gymquito",
+    "aprobado": true
+  },
+  {
+    "id": "w45_S_sab3_pregunta",
+    "tipo": "story",
+    "fecha": "2026-11-07T15:00:00-05:00",
+    "archivos": [
+      "w45_S_sab3_pregunta.jpg"
+    ],
+    "caption": "",
+    "aprobado": true
+  },
+  {
+    "id": "w45_S_sab4_foto",
+    "tipo": "story",
+    "fecha": "2026-11-07T18:00:00-05:00",
+    "archivos": [
+      "w45_S_sab4_foto.jpg"
+    ],
+    "caption": "",
+    "aprobado": true
+  },
+  {
+    "id": "w45_sab3_R4_kit",
+    "tipo": "reel",
+    "fecha": "2026-11-07T19:30:00-05:00",
+    "archivos": [
+      "w45_R4_kit.mp4"
+    ],
+    "caption": "Kit Bravura: gorra, straps, toalla y maleta. $130, IVA incluido.\nPedidos: link en bio.\n#torote #torotegymwear #madeinecuador #gymquito",
+    "aprobado": true,
+    "portada_ms": 500
+  },
+  {
+    "id": "w45_S_sab5_pedido",
+    "tipo": "story",
+    "fecha": "2026-11-07T21:00:00-05:00",
+    "archivos": [
+      "w45_S_sab5_pedido.jpg"
+    ],
+    "caption": "",
+    "aprobado": true
+  },
+  {
+    "id": "w45_dom1_mealprep",
+    "tipo": "post",
+    "fecha": "2026-11-08T07:00:00-05:00",
+    "archivos": [
+      "w45_dom1_mealprep.jpg"
+    ],
+    "caption": "Domingo: cocinar proteína y arroz para tres días.\n#torote #torotegymwear #madeinecuador #gymquito",
+    "aprobado": true
+  },
+  {
+    "id": "w45_S_dom1_dia",
+    "tipo": "story",
+    "fecha": "2026-11-08T08:30:00-05:00",
+    "archivos": [
+      "w45_S_dom1_dia.jpg"
+    ],
+    "caption": "",
+    "aprobado": true
+  },
+  {
+    "id": "w45_S_dom2_producto",
+    "tipo": "story",
+    "fecha": "2026-11-08T11:00:00-05:00",
+    "archivos": [
+      "w45_S_dom2_producto.jpg"
+    ],
+    "caption": "",
+    "aprobado": true
+  },
+  {
+    "id": "w45_dom2_straps_tips",
+    "tipo": "carrusel",
+    "fecha": "2026-11-08T12:30:00-05:00",
+    "archivos": [
+      "w45_dom2_straps_tips_1.jpg",
+      "w45_dom2_straps_tips_2.jpg",
+      "w45_dom2_straps_tips_3.jpg",
+      "w45_dom2_straps_tips_4.jpg",
+      "w45_dom2_straps_tips_5.jpg"
+    ],
+    "caption": "Straps: solo en jalones pesados. Las series ligeras, sin ellos.\nStraps TOROTE, $20. Pedidos: link en bio.\n#torote #torotegymwear #madeinecuador #gymquito",
+    "aprobado": true
+  },
+  {
+    "id": "w45_S_dom3_frase",
+    "tipo": "story",
+    "fecha": "2026-11-08T15:00:00-05:00",
+    "archivos": [
+      "w45_S_dom3_frase.jpg"
+    ],
+    "caption": "",
+    "aprobado": true
+  },
+  {
+    "id": "w45_S_dom4_foto",
+    "tipo": "story",
+    "fecha": "2026-11-08T18:00:00-05:00",
+    "archivos": [
+      "w45_S_dom4_foto.jpg"
+    ],
+    "caption": "",
+    "aprobado": true
+  },
+  {
+    "id": "w45_dom3_deadlift_cap",
+    "tipo": "post",
+    "fecha": "2026-11-08T19:30:00-05:00",
+    "archivos": [
+      "w45_dom3_deadlift_cap.jpg"
+    ],
+    "caption": "Gorra Dead Lift. $20.\nPedidos: link en bio.\n#torote #torotegymwear #madeinecuador #gymquito",
+    "aprobado": true
+  },
+  {
+    "id": "w45_S_dom5_pedido",
+    "tipo": "story",
+    "fecha": "2026-11-08T21:00:00-05:00",
+    "archivos": [
+      "w45_S_dom5_pedido.jpg"
+    ],
+    "caption": "",
+    "aprobado": true
   }
 ]
