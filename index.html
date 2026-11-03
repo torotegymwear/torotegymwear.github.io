@@ -314,5 +314,68 @@ $("#f").addEventListener("input", render); $("#f").addEventListener("submit", e 
 chips(); grid(); render();
 </script>
 
+<script>
+/* cw-contador-web · Oficina Creative Whisper: cuenta visitas y pedidos enviados a WhatsApp. No guarda nombres, teléfonos ni direcciones. */
+(() => {
+  const SB = "https://jlyrymgbykhpktabvlkl.supabase.co/rest/v1/eventos_web";
+  const KEY = "sb_publishable_ap5wyI1Q4-_IO8fXJ3xBJA_RzGp89dV";
+  const ruta = location.pathname.toLowerCase();
+  const marcaPagina = () => {
+    const m = (document.documentElement.dataset.marca || document.body?.dataset.marca || "").toLowerCase();
+    if (m === "uinky" || m === "porthos") return m;
+    if (ruta.includes("porthos")) return "porthos";
+    if (ruta.includes("uinky")) return "uinky";
+    return "torote";
+  };
+  const limpio = (v) => (v || "").toLowerCase().replace(/[^a-z0-9_-]/g, "").slice(0, 40);
+  let origen = limpio(new URLSearchParams(location.search).get("o"));
+  if (!origen) {
+    const r = document.referrer;
+    origen = /instagram/.test(r) ? "ig" : /tiktok/.test(r) ? "tt" : /facebook|fb\./.test(r) ? "fb" : /whatsapp|wa\.me/.test(r) ? "wa" : /google\./.test(r) ? "google" : "";
+  }
+  try {
+    const k = "cw_origen";
+    if (origen) localStorage.setItem(k, JSON.stringify({ o: origen, t: Date.now() }));
+    else { const s = JSON.parse(localStorage.getItem(k) || "null"); if (s && Date.now() - s.t < 30 * 864e5) origen = s.o; }
+  } catch (e) { /* sin almacenamiento */ }
+  origen = origen || "directo";
+  const enviar = (ev) => {
+    try {
+      fetch(SB, { method: "POST", keepalive: true, headers: { apikey: KEY, "Content-Type": "application/json", Prefer: "return=minimal" },
+        body: JSON.stringify(Object.assign({ marca: marcaPagina(), origen, pagina: location.pathname.slice(0, 80), movil: /Mobi|Android|iPhone/i.test(navigator.userAgent) }, ev)) }).catch(() => {});
+    } catch (e) { /* nada */ }
+  };
+  enviar({ tipo: "visita" });
+  // Solo se leen los productos y el total del mensaje; nunca el nombre ni la entrega.
+  const leerPedido = (texto) => {
+    const productos = [];
+    let total = null, marca = null;
+    for (const linea of texto.split("\n")) {
+      const fila = linea.match(/^\s*[•\-*]\s*(\d+)\s*[×x]\s*(.+?)\s*(?:—|-)\s*(?:\$|precio)/i);
+      if (fila) productos.push({ nombre: fila[2].slice(0, 80), q: Number(fila[1]) });
+      const t = linea.match(/total:?\s*\$\s*([\d.,]+)/i);
+      if (t) total = Number(t[1].replace(",", "."));
+    }
+    const jabon = texto.match(/hola\s+(uinky|porthos)\b.*?quiero\s+(?:pedir|saber el precio)\s+(?:del|de la|de los|de las|de|el|la|los|las)?\s*(.+?)(?:\s*\(|\s*—|\.\s*$|$)/i);
+    if (jabon) {
+      marca = jabon[1].toLowerCase();
+      if (!productos.length) productos.push({ nombre: jabon[2].slice(0, 80), q: 1 });
+      if (total == null) { const p = texto.match(/\$\s*([\d.,]+)/); if (p) total = Number(p[1].replace(",", ".")); }
+    }
+    const unidades = productos.reduce((s, p) => s + p.q, 0) || null;
+    return { productos, total, unidades, marca };
+  };
+  document.addEventListener("click", (e) => {
+    const a = e.target.closest && e.target.closest('a[href*="wa.me/"], a[href*="api.whatsapp.com/send"]');
+    if (!a || a.getAttribute("aria-disabled") === "true") return;
+    let texto = "";
+    try { texto = new URL(a.href).searchParams.get("text") || ""; } catch (err) { /* sin texto */ }
+    const p = leerPedido(texto);
+    const ev = { tipo: "pedido", productos: p.productos.length ? p.productos : null, unidades: p.unidades, total: p.total };
+    if (p.marca) ev.marca = p.marca;
+    enviar(ev);
+  }, true);
+})();
+</script>
 </body>
 </html>
