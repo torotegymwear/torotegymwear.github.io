@@ -315,7 +315,7 @@ chips(); grid(); render();
 </script>
 
 <script>
-/* cw-contador-web · Oficina Creative Whisper: cuenta visitas y pedidos enviados a WhatsApp. No guarda nombres, teléfonos ni direcciones. */
+/* cw-contador-web v2 · Oficina Creative Whisper: cuenta visitas y pedidos enviados a WhatsApp. No guarda nombres, teléfonos ni direcciones. */
 (() => {
   const SB = "https://jlyrymgbykhpktabvlkl.supabase.co/rest/v1/eventos_web";
   const KEY = "sb_publishable_ap5wyI1Q4-_IO8fXJ3xBJA_RzGp89dV";
@@ -356,9 +356,9 @@ chips(); grid(); render();
       const t = linea.match(/total:?\s*\$\s*([\d.,]+)/i);
       if (t) total = Number(t[1].replace(",", "."));
     }
-    const jabon = texto.match(/hola\s+(uinky|porthos)\b.*?quiero\s+(?:pedir|saber el precio)\s+(?:del|de la|de los|de las|de|el|la|los|las)?\s*(.+?)(?:\s*\(|\s*—|\.\s*$|$)/i);
+    const jabon = texto.match(/hola\s+([uü]inky|porthos)\b.*?quiero\s+(?:pedir|saber el precio)\s+(?:del|de la|de los|de las|de|el|la|los|las)?\s*(.+?)(?:\s*\(|\s*—|\.\s*$|$)/i);
     if (jabon) {
-      marca = jabon[1].toLowerCase();
+      marca = jabon[1].toLowerCase().replace("ü", "u");
       if (!productos.length) productos.push({ nombre: jabon[2].slice(0, 80), q: 1 });
       if (total == null) { const p = texto.match(/\$\s*([\d.,]+)/); if (p) total = Number(p[1].replace(",", ".")); }
     }
