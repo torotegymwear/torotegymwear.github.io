@@ -691,6 +691,8 @@ function sxAutoplay({ end, chip, speed = .5, delay = 1700, offset = () => 0 }) {
   if (skip) skip.addEventListener('click', e => {
     e.preventDefault(); stop();
     window.scrollTo({ top: endY(), behavior: 'smooth' });
+    // si algo cambió de alto mientras bajaba (fotos que cargan), se corrige al llegar
+    [1100, 2000].forEach(ms => setTimeout(() => { const y = endY(); if (Math.abs(scrollY - y) > 12) window.scrollTo({ top: y, behavior: 'instant' }); }, ms));
   });
   chip.dataset.state = 'playing';
   timer = setTimeout(resume, delay);
