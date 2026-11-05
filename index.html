@@ -665,7 +665,7 @@ function sxAutoplay({ end, chip, speed = .5, delay = 1700, offset = () => 0 }) {
     if (done) return;
     const target = endY();
     if (!paused) {
-      const dt = last ? Math.min(50, t - last) : 16;
+      const dt = last ? Math.min(100, t - last) : 16;
       acc += innerHeight * speed * dt / 1000;
       if (acc >= target) { window.scrollTo({ top: target, behavior: 'instant' }); stop(); return; }
       window.scrollTo({ top: Math.round(acc), behavior: 'instant' });
