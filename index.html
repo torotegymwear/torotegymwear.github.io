@@ -313,7 +313,7 @@ html{scroll-behavior:auto}
 <div class="sx" id="historia-scroll">
 
 <!-- 1 · la puerta BRAVURA -->
-<section class="sx-s sx-open" aria-label="TOROTE Bravura">
+<section class="sx-s sx-open" id="bravura" aria-label="TOROTE Bravura">
   <div class="sx-stage">
     <div class="sx-open-img"><img src="assets/img/hero.jpg" alt="Atleta con gorra y maleta roja TOROTE" fetchpriority="high"></div>
     <div class="sx-open-shade"></div>
@@ -333,7 +333,7 @@ html{scroll-behavior:auto}
 </section>
 
 <!-- 2 · las tres virtudes -->
-<section class="sx-s sx-virt" aria-label="Qué es bravura">
+<section class="sx-s sx-virt" id="virtudes" aria-label="Qué es bravura">
   <div class="sx-stage">
     <div class="sx-virt-grid" aria-hidden="true"></div>
     <span class="mono sx-kicker">Bravura es</span>
@@ -345,7 +345,7 @@ html{scroll-behavior:auto}
 </section>
 
 <!-- 3 · los precios ruedan como discos -->
-<section class="sx-s sx-rack" aria-label="Lo que hacemos y sus precios">
+<section class="sx-s sx-rack" id="precios" aria-label="Lo que hacemos y sus precios">
   <div class="sx-stage">
     <span class="mono sx-kicker">El equipo · precios con IVA incluido</span>
     <div class="sx-cat">
@@ -397,7 +397,7 @@ html{scroll-behavior:auto}
 </section>
 
 <!-- 4 · costura Hecho en Ecuador -->
-<section class="sx-s sx-made" aria-label="Hecho en Ecuador">
+<section class="sx-s sx-made" id="hecho-en-ecuador" aria-label="Hecho en Ecuador">
   <div class="sx-stage">
     <div>
       <div class="sx-made-box">
@@ -410,7 +410,7 @@ html{scroll-behavior:auto}
 </section>
 
 <!-- 5 · el Kit Bravura -->
-<section class="sx-s sx-kit" aria-label="Kit Bravura">
+<section class="sx-s sx-kit" id="kit" aria-label="Kit Bravura">
   <div class="sx-stage">
     <div class="sx-kit-board">
       <div class="sx-kit-parts">
@@ -809,8 +809,36 @@ function sxAutoplay({ end, chip, speed = .5, delay = 1700, offset = () => 0 }) {
   addEventListener('load', () => ScrollTrigger.refresh());
 
   /* recorrido automático hasta el catálogo */
-  sxAutoplay({ end: $('#catalogo'), chip: $('.sx-chip'), speed: .55, offset: hh });
+  window.sxTour = sxAutoplay({ end: $('#catalogo'), chip: $('.sx-chip'), speed: .55, offset: hh });
 })();
 </script>
+<!-- Asistente de chat y voz (el mismo de Creative Whisper). La información sale de la base de TOROTE. -->
+<script>
+window.CW_ASISTENTE = {
+  sitio: "torote",
+  tema: { fondo: "#0E0D0C", panel: "#161412", panel2: "#211E1B", texto: "#F7F5F1", suave: "#9A948C",
+          acento: "#E3120B", acentoTexto: "#FF4A3D", sobreAcento: "#F7F5F1", linea: "#2B2825",
+          fuente: '"Archivo","Helvetica Neue",Arial,sans-serif', titulo: '"Anton","Impact","Arial Narrow Bold",sans-serif' },
+  textos: {
+    titulo: "Asistente TOROTE",
+    saludo: "Hola. Soy el asistente de TOROTE: te ayudo con precios, productos y cómo hacer tu pedido.",
+    sugerencias: ["¿Cuánto cuesta el Kit Bravura?", "¿Qué gorras tienen?", "¿Cómo hago mi pedido?", "¿Hacen envíos?"],
+    nota: "Asistente automático de TOROTE. El pedido se envía por WhatsApp desde el botón Pedido."
+  },
+  cabecera: "header.top",
+  evitar: ["#bar", ".sx-chip", ".sx-ctas"],
+  // punto de cada tramo animado donde ya se ve el contenido
+  avance: { bravura: 0, virtudes: 0.15, precios: 0.12, "hecho-en-ecuador": 0.5, kit: 0.92 },
+  // catalogo-gorras, catalogo-ropa…: filtra el catálogo por esa categoría y lo muestra
+  resolver: function (id) {
+    var m = /^catalogo-(.+)$/.exec(id);
+    if (!m) return null;
+    var chip = document.querySelector('#chips button[data-c="' + m[1] + '"]');
+    if (chip && chip.getAttribute("aria-pressed") !== "true") chip.click();
+    return document.getElementById("chips");
+  }
+};
+</script>
+<script src="https://creativewhisper.github.io/asistente/asistente.js" defer></script>
 </body>
 </html>
