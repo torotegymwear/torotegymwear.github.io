@@ -477,7 +477,7 @@ html{scroll-behavior:auto}
 <script>
 /* ---------------- configuración (editable) ---------------- */
 const CONFIG = {
-  whatsapp: "593969577774",   // número de pedidos (Ecuador +593, sin el 0 inicial)
+  whatsapp: "593969235680",   // número de pedidos (Ecuador +593, sin el 0 inicial)
   iva: 0.15,                  // IVA Ecuador
   tallas: ["S","M","L","XL"],
   categorias: {kits:"Kits", gorras:"Gorras", straps:"Straps", munequeras:"Muñequeras", toallas:"Toallas", maletas:"Maletas", ropa:"Ropa"}
@@ -710,7 +710,7 @@ function sxAutoplay({ end, chip, speed = .5, delay = 1700, offset = () => 0 }) {
   const hh = () => header ? header.offsetHeight : 0;
   const setHH = () => root.style.setProperty('--hh', hh() + 'px');
   setHH();
-  const phone = (typeof CONFIG !== 'undefined' && CONFIG.whatsapp) || '593969577774';
+  const phone = (typeof CONFIG !== 'undefined' && CONFIG.whatsapp) || '593969235680';
 
   // botones de WhatsApp de la historia (el mensaje lleva "TOROTE" para que responda el asistente)
   $$('.js-sx-wa').forEach(a => {
