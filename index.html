@@ -421,14 +421,14 @@ html{scroll-behavior:auto}
         <figure><img src="assets/p/m-roja.jpg" alt="Maleta" loading="lazy"><figcaption>Maleta</figcaption></figure>
       </div>
       <div class="sx-kit-final"><img src="assets/p/kit-bravura.jpg" alt="Kit Bravura: gorra, muñequeras, toalla y maleta" loading="lazy"></div>
-      <div class="sx-stamp" aria-hidden="true"><div><small>KIT</small><b>$130</b><small>IVA INCL.</small></div></div>
+      <div class="sx-stamp" aria-hidden="true"><div><small id="kitStampTop">KIT</small><b id="kitStamp">$130</b><small>IVA INCL.</small></div></div>
     </div>
     <div class="sx-kit-copy">
       <span class="mono">Todo en uno</span>
       <h2>Kit<br>Bravura</h2>
-      <p>Gorra, straps o muñequeras, toalla y maleta, listos para tu próximo entrenamiento. $130 con IVA incluido.</p>
+      <p id="kitCopy">Gorra, straps o muñequeras, toalla y maleta, listos para tu próximo entrenamiento. $130 con IVA incluido.</p>
       <div class="sx-ctas">
-        <a class="sx-btn red js-sx-wa" href="#" data-msg="Hola TOROTE, quiero el Kit Bravura de $130.">Pedir el kit por WhatsApp</a>
+        <a class="sx-btn red js-sx-wa" href="#" id="kitWa" data-msg="Hola TOROTE, quiero el Kit Bravura de $130.">Pedir el kit por WhatsApp</a>
         <a class="sx-btn ghost" href="#catalogo">Ver todo el catálogo ↓</a>
       </div>
     </div>
@@ -485,6 +485,10 @@ const CONFIG = {
 };
 // price: número = precio final con IVA incluido · null = "precio por WhatsApp"
 const PRODUCTS = [{"id":"kit-bravura","cat":"kits","name":"Kit Bravura: gorra + straps o muñequeras + toalla + maleta","price":130,"sizes":false},{"id":"g-roja","cat":"gorras","name":"Gorra Roja Toro","price":20,"sizes":false},{"id":"g-ss","cat":"gorras","name":"Gorra Strong Soul","price":20,"sizes":false},{"id":"g-dl","cat":"gorras","name":"Gorra Dead Lift","price":20,"sizes":false},{"id":"g-bp","cat":"gorras","name":"Gorra Bench Press","price":20,"sizes":false},{"id":"g-gw","cat":"gorras","name":"Gorra Gym Wear","price":20,"sizes":false},{"id":"g-sq","cat":"gorras","name":"Gorra Squats","price":20,"sizes":false},{"id":"g-front","cat":"gorras","name":"Gorra TOROTE Frontal","price":20,"sizes":false},{"id":"g-parche","cat":"gorras","name":"Gorra Parche Negra","price":20,"sizes":false},{"id":"g-parche-r","cat":"gorras","name":"Gorra Parche Roja","price":20,"sizes":false},{"id":"g-mandala","cat":"gorras","name":"Gorra Roja Mandala","price":20,"sizes":false},{"id":"g-gw-r","cat":"gorras","name":"Gorra Roja Gym Wear","price":20,"sizes":false},{"id":"g-gw-y","cat":"gorras","name":"Gorra Gym Wear Dorada","price":20,"sizes":false},{"id":"s-militar","cat":"straps","name":"Straps Verde Militar","price":20,"sizes":false},{"id":"s-rosa","cat":"straps","name":"Straps Rosa Neón","price":20,"sizes":false},{"id":"s-rojo","cat":"munequeras","name":"Muñequeras Rojas","price":20,"sizes":false},{"id":"s-lima","cat":"munequeras","name":"Muñequeras Verde Lima","price":20,"sizes":false},{"id":"t-negra","cat":"toallas","name":"Toalla Negra TOROTE","price":25,"sizes":false},{"id":"t-xl","cat":"toallas","name":"Toalla Negra Letras XL","price":25,"sizes":false},{"id":"t-amarilla","cat":"toallas","name":"Toalla Amarilla","price":25,"sizes":false},{"id":"t-roja","cat":"toallas","name":"Toalla Roja","price":25,"sizes":false},{"id":"t-gw","cat":"toallas","name":"Toalla Gym Wear","price":25,"sizes":false},{"id":"m-roja","cat":"maletas","name":"Maleta Roja TOROTE","price":65,"sizes":false},{"id":"m-negra","cat":"maletas","name":"Maleta Negra y Roja","price":65,"sizes":false},{"id":"m-naranja","cat":"maletas","name":"Maleta Naranja","price":65,"sizes":false},{"id":"m-cil-r","cat":"maletas","name":"Maleta Cilíndrica Roja","price":55,"sizes":false},{"id":"m-cil-n","cat":"maletas","name":"Maleta Cilíndrica Negra","price":55,"sizes":false},{"id":"r-ss","cat":"ropa","name":"Camiseta Strong Soul","price":30,"sizes":true},{"id":"r-fitgirl","cat":"ropa","name":"Camiseta Fit Girl","price":30,"sizes":true},{"id":"r-squats","cat":"ropa","name":"Camiseta Squats","price":30,"sizes":true},{"id":"r-fw-n","cat":"ropa","name":"Chompa Fit Wear Negra","price":45,"sizes":true},{"id":"r-fw-r","cat":"ropa","name":"Chompa Fit Wear Roja","price":45,"sizes":true},{"id":"r-tank-m","cat":"ropa","name":"Tank Militar","price":30,"sizes":true},{"id":"r-tank-r","cat":"ropa","name":"Tank Roja","price":30,"sizes":true},{"id":"r-tank-n","cat":"ropa","name":"Tank Negra","price":30,"sizes":true},{"id":"r-hood-n","cat":"ropa","name":"Hoodie Gym Wear Negro","price":45,"sizes":true},{"id":"r-hood-r","cat":"ropa","name":"Hoodie Gym Wear Rojo","price":45,"sizes":true},{"id":"r-buzo-r","cat":"ropa","name":"Buzo Sports Wear Rojo","price":45,"sizes":true},{"id":"r-buzo-a","cat":"ropa","name":"Buzo Sports Wear Azul","price":45,"sizes":true},{"id":"r-malla-n","cat":"ropa","name":"Hoodie Malla Negro","price":45,"sizes":true},{"id":"r-malla-g","cat":"ropa","name":"Hoodie Malla Gris","price":45,"sizes":true}];
+// Navidad 2026: Kit Bravura a $110 (antes $130), del 19 nov al 24 dic. Se apaga sola el 25 dic. null = apagada
+const NAVIDAD = { id:"kit-bravura", precio:110, antes:130, desde:"2026-11-19T00:00:00-05:00", hasta:"2026-12-25T00:00:00-05:00" };
+const NAV = NAVIDAD && Date.now() >= Date.parse(NAVIDAD.desde) && Date.now() < Date.parse(NAVIDAD.hasta) ? NAVIDAD : null;
+if (NAV) { const k = PRODUCTS.find(p => p.id === NAV.id); if (k) { k.price = NAV.precio; k.antes = NAV.antes; k.name = k.name.replace("Kit Bravura", "Kit Bravura de Navidad"); } }
 /* ----------------------------------------------------------- */
 
 const $ = s => document.querySelector(s);
@@ -512,7 +516,7 @@ function grid() {
         <h4>${p.name}</h4>
         ${p.sizes ? `<div class="sizes" role="group" aria-label="Talla">${CONFIG.tallas.map(t => `<button type="button" data-s="${p.id}|${t}" aria-pressed="${chosenSize[p.id] === t}">${t}</button>`).join("")}</div>` : ""}
         <div class="row">
-          <span class="price">${p.price != null ? `${money(p.price)} <small>IVA incl.</small>` : `<small>Precio por WhatsApp</small>`}</span>
+          <span class="price">${p.price != null ? `${p.antes ? `<s>${money(p.antes)}</s> ` : ""}${money(p.price)} <small>IVA incl.</small>` : `<small>Precio por WhatsApp</small>`}</span>
           <button class="add" type="button" data-a="${p.id}">Agregar</button>
         </div>
       </div>
@@ -714,6 +718,10 @@ function sxAutoplay({ end, chip, speed = .5, delay = 1700, offset = () => 0 }) {
   const phone = (typeof CONFIG !== 'undefined' && CONFIG.whatsapp) || '593969235680';
 
   // botones de WhatsApp de la historia (el mensaje lleva "TOROTE" para que responda el asistente)
+  if (NAV) { const st = document.getElementById("kitStamp"), tp = document.getElementById("kitStampTop"), cp = document.getElementById("kitCopy"), wa = document.getElementById("kitWa");
+    if (st) st.textContent = "$" + NAV.precio; if (tp) tp.textContent = "NAVIDAD";
+    if (cp) cp.innerHTML = `Gorra, straps o muñequeras, toalla y maleta. Por Navidad, <b>$${NAV.precio}</b> en vez de <s>$${NAV.antes}</s>, con IVA y envío incluidos. Hasta el 24 de diciembre.`;
+    if (wa) wa.dataset.msg = `Hola TOROTE, quiero el Kit Bravura de Navidad de $${NAV.precio}.`; }
   $$('.js-sx-wa').forEach(a => {
     a.href = `https://api.whatsapp.com/send?phone=${phone}&text=${encodeURIComponent(a.dataset.msg)}`;
     a.target = '_blank'; a.rel = 'noopener';
