@@ -3025,5 +3025,576 @@
     ],
     "caption": "",
     "aprobado": true
+  },
+  {
+    "id": "w48_lun1_cold_morning",
+    "tipo": "post",
+    "fecha": "2026-11-23T07:00:00-05:00",
+    "archivos": [
+      "w48_lun1_cold_morning.jpg"
+    ],
+    "caption": "Mañana fría en Quito. Buzo Sports Wear azul y chompa roja TOROTE.\nTallas S, M, L y XL. Modelos y fotos en el catálogo.\nPedidos: link en bio.\n#torote #torotegymwear #madeinecuador #gymquito",
+    "aprobado": true
+  },
+  {
+    "id": "w48_S_lun1_dia",
+    "tipo": "story",
+    "fecha": "2026-11-23T08:30:00-05:00",
+    "archivos": [
+      "w48_S_lun1_dia.jpg"
+    ],
+    "caption": "",
+    "aprobado": true
+  },
+  {
+    "id": "w48_S_lun2_producto",
+    "tipo": "story",
+    "fecha": "2026-11-23T11:00:00-05:00",
+    "archivos": [
+      "w48_S_lun2_producto.jpg"
+    ],
+    "caption": "",
+    "aprobado": true
+  },
+  {
+    "id": "w48_lun2_the_lineup",
+    "tipo": "carrusel",
+    "fecha": "2026-11-23T12:30:00-05:00",
+    "archivos": [
+      "w48_lun2_the_lineup_1.jpg",
+      "w48_lun2_the_lineup_2.jpg",
+      "w48_lun2_the_lineup_3.jpg",
+      "w48_lun2_the_lineup_4.jpg",
+      "w48_lun2_the_lineup_5.jpg",
+      "w48_lun2_the_lineup_6.jpg"
+    ],
+    "caption": "Lo que hacemos, con precio (USD, IVA incluido):\nGorras $20 · doce modelos bordados.\nStraps y muñequeras $20 el par · straps verde militar o rosa neón; muñequeras rojas o verde lima.\nToallas $25 · cinco modelos, incluida la XL.\nMaleta con correa $65 · roja, negra y roja, o naranja.\nRopa: camisetas, tanks y chompas, tallas S a XL. Modelos y fotos en el catálogo.\nHecho en Ecuador por artesanos locales.\nPedidos: link en bio.\n#torote #torotegymwear #madeinecuador #gymquito",
+    "aprobado": true
+  },
+  {
+    "id": "w48_S_lun3_pregunta",
+    "tipo": "story",
+    "fecha": "2026-11-23T15:00:00-05:00",
+    "archivos": [
+      "w48_S_lun3_pregunta.jpg"
+    ],
+    "caption": "",
+    "aprobado": true
+  },
+  {
+    "id": "w48_S_lun4_foto",
+    "tipo": "story",
+    "fecha": "2026-11-23T18:00:00-05:00",
+    "archivos": [
+      "w48_S_lun4_foto.jpg"
+    ],
+    "caption": "",
+    "aprobado": true
+  },
+  {
+    "id": "w48_lun3_empty_bar",
+    "tipo": "post",
+    "fecha": "2026-11-23T19:30:00-05:00",
+    "archivos": [
+      "w48_lun3_empty_bar.jpg"
+    ],
+    "caption": "Primera serie con la barra vacía. Después se sube de a poco hasta el peso de trabajo.\n#torote #torotegymwear #madeinecuador #gymquito",
+    "aprobado": true
+  },
+  {
+    "id": "w48_S_lun5_pedido",
+    "tipo": "story",
+    "fecha": "2026-11-23T21:00:00-05:00",
+    "archivos": [
+      "w48_S_lun5_pedido.jpg"
+    ],
+    "caption": "",
+    "aprobado": true
+  },
+  {
+    "id": "w48_mar1_parche_negra",
+    "tipo": "post",
+    "fecha": "2026-11-24T07:00:00-05:00",
+    "archivos": [
+      "w48_mar1_parche_negra.jpg"
+    ],
+    "caption": "Gorra Parche Negra. $20, IVA incluido.\nUno de los doce modelos bordados.\nPedidos: link en bio.\n#torote #torotegymwear #madeinecuador #gymquito",
+    "aprobado": true
+  },
+  {
+    "id": "w48_S_mar1_dia",
+    "tipo": "story",
+    "fecha": "2026-11-24T08:30:00-05:00",
+    "archivos": [
+      "w48_S_mar1_dia.jpg"
+    ],
+    "caption": "",
+    "aprobado": true
+  },
+  {
+    "id": "w48_S_mar2_producto",
+    "tipo": "story",
+    "fecha": "2026-11-24T11:00:00-05:00",
+    "archivos": [
+      "w48_S_mar2_producto.jpg"
+    ],
+    "caption": "",
+    "aprobado": true
+  },
+  {
+    "id": "w48_mar2_split_squat",
+    "tipo": "post",
+    "fecha": "2026-11-24T12:30:00-05:00",
+    "archivos": [
+      "w48_mar2_split_squat.jpg"
+    ],
+    "caption": "Sentadilla dividida: 3 series de 10 por pierna. Bajar controlado, rodilla de atrás casi al piso.\n#torote #torotegymwear #madeinecuador #gymquito",
+    "aprobado": true
+  },
+  {
+    "id": "w48_S_mar3_pregunta",
+    "tipo": "story",
+    "fecha": "2026-11-24T15:00:00-05:00",
+    "archivos": [
+      "w48_S_mar3_pregunta.jpg"
+    ],
+    "caption": "",
+    "aprobado": true
+  },
+  {
+    "id": "w48_S_mar4_foto",
+    "tipo": "story",
+    "fecha": "2026-11-24T18:00:00-05:00",
+    "archivos": [
+      "w48_S_mar4_foto.jpg"
+    ],
+    "caption": "",
+    "aprobado": true
+  },
+  {
+    "id": "w48_mar3_R1_hood_season",
+    "tipo": "reel",
+    "fecha": "2026-11-24T19:30:00-05:00",
+    "archivos": [
+      "w48_R1_hood_season.mp4"
+    ],
+    "caption": "Cuatro modelos de chompa: Chompa Fit Wear (negra o roja), Hoodie Gym Wear (negro o rojo), Buzo Sports Wear (rojo o azul) y Hoodie de Malla (negro o gris).\nTallas S, M, L y XL. La talla exacta se confirma al tomar el pedido.\nPedidos: link en bio.\n#torote #torotegymwear #madeinecuador #gymquito",
+    "aprobado": true,
+    "portada_ms": 400
+  },
+  {
+    "id": "w48_S_mar5_pedido",
+    "tipo": "story",
+    "fecha": "2026-11-24T21:00:00-05:00",
+    "archivos": [
+      "w48_S_mar5_pedido.jpg"
+    ],
+    "caption": "",
+    "aprobado": true
+  },
+  {
+    "id": "w48_mie1_munequeras_rojas",
+    "tipo": "post",
+    "fecha": "2026-11-25T07:00:00-05:00",
+    "archivos": [
+      "w48_mie1_munequeras_rojas.jpg"
+    ],
+    "caption": "Muñequeras rojas con argolla de metal y velcro. $20 el par, IVA incluido.\nTambién en verde lima.\nPedidos: link en bio.\n#torote #torotegymwear #madeinecuador #gymquito",
+    "aprobado": true
+  },
+  {
+    "id": "w48_S_mie1_dia",
+    "tipo": "story",
+    "fecha": "2026-11-25T08:30:00-05:00",
+    "archivos": [
+      "w48_S_mie1_dia.jpg"
+    ],
+    "caption": "",
+    "aprobado": true
+  },
+  {
+    "id": "w48_S_mie2_producto",
+    "tipo": "story",
+    "fecha": "2026-11-25T11:00:00-05:00",
+    "archivos": [
+      "w48_S_mie2_producto.jpg"
+    ],
+    "caption": "",
+    "aprobado": true
+  },
+  {
+    "id": "w48_mie2_you_asked",
+    "tipo": "carrusel",
+    "fecha": "2026-11-25T12:30:00-05:00",
+    "archivos": [
+      "w48_mie2_you_asked_1.jpg",
+      "w48_mie2_you_asked_2.jpg",
+      "w48_mie2_you_asked_3.jpg",
+      "w48_mie2_you_asked_4.jpg",
+      "w48_mie2_you_asked_5.jpg"
+    ],
+    "caption": "Lo que más nos preguntaron este mes:\nDónde estamos: Quito. Envío a domicilio o retiro en persona, previa verificación de datos.\nPara el agarre: straps o muñequeras, $20 el par con IVA.\nChompas: Fit Wear, Hoodie Gym Wear, Buzo Sports Wear y Hoodie de Malla, tallas S a XL.\nEnvío: incluido en compras de más de $50.\nPedidos: link en bio.\n#torote #torotegymwear #madeinecuador #gymquito",
+    "aprobado": true
+  },
+  {
+    "id": "w48_S_mie3_pregunta",
+    "tipo": "story",
+    "fecha": "2026-11-25T15:00:00-05:00",
+    "archivos": [
+      "w48_S_mie3_pregunta.jpg"
+    ],
+    "caption": "",
+    "aprobado": true
+  },
+  {
+    "id": "w48_S_mie4_foto",
+    "tipo": "story",
+    "fecha": "2026-11-25T18:00:00-05:00",
+    "archivos": [
+      "w48_S_mie4_foto.jpg"
+    ],
+    "caption": "",
+    "aprobado": true
+  },
+  {
+    "id": "w48_mie3_back_logo",
+    "tipo": "post",
+    "fecha": "2026-11-25T19:30:00-05:00",
+    "archivos": [
+      "w48_mie3_back_logo.jpg"
+    ],
+    "caption": "Hoodie gris con el logo TOROTE en la espalda.\nModelos y tallas (S a XL) en el catálogo.\nPedidos: link en bio.\n#torote #torotegymwear #madeinecuador #gymquito",
+    "aprobado": true
+  },
+  {
+    "id": "w48_S_mie5_pedido",
+    "tipo": "story",
+    "fecha": "2026-11-25T21:00:00-05:00",
+    "archivos": [
+      "w48_S_mie5_pedido.jpg"
+    ],
+    "caption": "",
+    "aprobado": true
+  },
+  {
+    "id": "w48_jue1_toalla_gymwear",
+    "tipo": "post",
+    "fecha": "2026-11-26T07:00:00-05:00",
+    "archivos": [
+      "w48_jue1_toalla_gymwear.jpg"
+    ],
+    "caption": "Toalla Gym Wear. $25, IVA incluido.\nTodas las toallas TOROTE cuestan lo mismo.\nPedidos: link en bio.\n#torote #torotegymwear #madeinecuador #gymquito",
+    "aprobado": true
+  },
+  {
+    "id": "w48_S_jue1_dia",
+    "tipo": "story",
+    "fecha": "2026-11-26T08:30:00-05:00",
+    "archivos": [
+      "w48_S_jue1_dia.jpg"
+    ],
+    "caption": "",
+    "aprobado": true
+  },
+  {
+    "id": "w48_S_jue2_producto",
+    "tipo": "story",
+    "fecha": "2026-11-26T11:00:00-05:00",
+    "archivos": [
+      "w48_S_jue2_producto.jpg"
+    ],
+    "caption": "",
+    "aprobado": true
+  },
+  {
+    "id": "w48_jue2_orange",
+    "tipo": "post",
+    "fecha": "2026-11-26T12:30:00-05:00",
+    "archivos": [
+      "w48_jue2_orange.jpg"
+    ],
+    "caption": "Maleta naranja con correa, al hombro o a la espalda. $65, IVA incluido.\nComo pasa de $50, el envío va incluido.\nPedidos: link en bio.\n#torote #torotegymwear #madeinecuador #gymquito",
+    "aprobado": true
+  },
+  {
+    "id": "w48_S_jue3_pregunta",
+    "tipo": "story",
+    "fecha": "2026-11-26T15:00:00-05:00",
+    "archivos": [
+      "w48_S_jue3_pregunta.jpg"
+    ],
+    "caption": "",
+    "aprobado": true
+  },
+  {
+    "id": "w48_S_jue4_foto",
+    "tipo": "story",
+    "fecha": "2026-11-26T18:00:00-05:00",
+    "archivos": [
+      "w48_S_jue4_foto.jpg"
+    ],
+    "caption": "",
+    "aprobado": true
+  },
+  {
+    "id": "w48_jue3_R2_four_for_grip",
+    "tipo": "reel",
+    "fecha": "2026-11-26T19:30:00-05:00",
+    "archivos": [
+      "w48_R2_four_for_grip.mp4"
+    ],
+    "caption": "Para el agarre en series pesadas: straps (verde militar o rosa neón) o muñequeras con argolla y velcro (rojas o verde lima).\n$20 el par, IVA incluido.\nPedidos: link en bio.\n#torote #torotegymwear #madeinecuador #gymquito",
+    "aprobado": true,
+    "portada_ms": 400
+  },
+  {
+    "id": "w48_S_jue5_pedido",
+    "tipo": "story",
+    "fecha": "2026-11-26T21:00:00-05:00",
+    "archivos": [
+      "w48_S_jue5_pedido.jpg"
+    ],
+    "caption": "",
+    "aprobado": true
+  },
+  {
+    "id": "w48_vie1_two_tone",
+    "tipo": "post",
+    "fecha": "2026-11-27T07:00:00-05:00",
+    "archivos": [
+      "w48_vie1_two_tone.jpg"
+    ],
+    "caption": "Camiseta Strong Soul en rojo y blanco, y gorra Roja Toro.\nGorra $20, IVA incluido. Tallas de ropa S a XL.\nPedidos: link en bio.\n#torote #torotegymwear #madeinecuador #gymquito",
+    "aprobado": true
+  },
+  {
+    "id": "w48_S_vie1_dia",
+    "tipo": "story",
+    "fecha": "2026-11-27T08:30:00-05:00",
+    "archivos": [
+      "w48_S_vie1_dia.jpg"
+    ],
+    "caption": "",
+    "aprobado": true
+  },
+  {
+    "id": "w48_S_vie2_producto",
+    "tipo": "story",
+    "fecha": "2026-11-27T11:00:00-05:00",
+    "archivos": [
+      "w48_S_vie2_producto.jpg"
+    ],
+    "caption": "",
+    "aprobado": true
+  },
+  {
+    "id": "w48_vie2_strap_setup",
+    "tipo": "carrusel",
+    "fecha": "2026-11-27T12:30:00-05:00",
+    "archivos": [
+      "w48_vie2_strap_setup_1.jpg",
+      "w48_vie2_strap_setup_2.jpg",
+      "w48_vie2_strap_setup_3.jpg",
+      "w48_vie2_strap_setup_4.jpg",
+      "w48_vie2_strap_setup_5.jpg"
+    ],
+    "caption": "Straps, paso a paso:\n1. Ajusta la tira en la muñeca.\n2. Pasa la cola por debajo de la barra, enróllala hacia ti y gira la mano para tensarla.\n3. Solo en las series pesadas de peso muerto, remo o dominadas. El calentamiento, sin straps.\nStraps verde militar o rosa neón: $20 el par, IVA incluido.\nPedidos: link en bio.\n#torote #torotegymwear #madeinecuador #gymquito",
+    "aprobado": true
+  },
+  {
+    "id": "w48_S_vie3_pregunta",
+    "tipo": "story",
+    "fecha": "2026-11-27T15:00:00-05:00",
+    "archivos": [
+      "w48_S_vie3_pregunta.jpg"
+    ],
+    "caption": "",
+    "aprobado": true
+  },
+  {
+    "id": "w48_S_vie4_foto",
+    "tipo": "story",
+    "fecha": "2026-11-27T18:00:00-05:00",
+    "archivos": [
+      "w48_S_vie4_foto.jpg"
+    ],
+    "caption": "",
+    "aprobado": true
+  },
+  {
+    "id": "w48_S_vie5_pedido",
+    "tipo": "story",
+    "fecha": "2026-11-27T21:00:00-05:00",
+    "archivos": [
+      "w48_S_vie5_pedido.jpg"
+    ],
+    "caption": "",
+    "aprobado": true
+  },
+  {
+    "id": "w48_sab1_clean_reps",
+    "tipo": "post",
+    "fecha": "2026-11-28T07:00:00-05:00",
+    "archivos": [
+      "w48_sab1_clean_reps.jpg"
+    ],
+    "caption": "Temperance: si la técnica se rompe, la serie terminó.\n#torote #torotegymwear #madeinecuador #gymquito",
+    "aprobado": true
+  },
+  {
+    "id": "w48_S_sab1_dia",
+    "tipo": "story",
+    "fecha": "2026-11-28T08:30:00-05:00",
+    "archivos": [
+      "w48_S_sab1_dia.jpg"
+    ],
+    "caption": "",
+    "aprobado": true
+  },
+  {
+    "id": "w48_S_sab2_producto",
+    "tipo": "story",
+    "fecha": "2026-11-28T11:00:00-05:00",
+    "archivos": [
+      "w48_S_sab2_producto.jpg"
+    ],
+    "caption": "",
+    "aprobado": true
+  },
+  {
+    "id": "w48_sab2_squats_tee",
+    "tipo": "post",
+    "fecha": "2026-11-28T12:30:00-05:00",
+    "archivos": [
+      "w48_sab2_squats_tee.jpg"
+    ],
+    "caption": "Camiseta Squats en verde y maleta roja con correa.\nMaleta $65, IVA incluido. Tallas de ropa S a XL.\nPedidos: link en bio.\n#torote #torotegymwear #madeinecuador #gymquito",
+    "aprobado": true
+  },
+  {
+    "id": "w48_S_sab3_pregunta",
+    "tipo": "story",
+    "fecha": "2026-11-28T15:00:00-05:00",
+    "archivos": [
+      "w48_S_sab3_pregunta.jpg"
+    ],
+    "caption": "",
+    "aprobado": true
+  },
+  {
+    "id": "w48_S_sab4_foto",
+    "tipo": "story",
+    "fecha": "2026-11-28T18:00:00-05:00",
+    "archivos": [
+      "w48_S_sab4_foto.jpg"
+    ],
+    "caption": "",
+    "aprobado": true
+  },
+  {
+    "id": "w48_sab3_R3_red_set",
+    "tipo": "reel",
+    "fecha": "2026-11-28T19:30:00-05:00",
+    "archivos": [
+      "w48_R3_red_set.mp4"
+    ],
+    "caption": "Todo en rojo: gorra Roja Toro $20, gorra Roja Mandala $20, toalla roja $25 y maleta roja con correa $65. Precios con IVA.\nPedidos: link en bio.\n#torote #torotegymwear #madeinecuador #gymquito",
+    "aprobado": true,
+    "portada_ms": 400
+  },
+  {
+    "id": "w48_S_sab5_pedido",
+    "tipo": "story",
+    "fecha": "2026-11-28T21:00:00-05:00",
+    "archivos": [
+      "w48_S_sab5_pedido.jpg"
+    ],
+    "caption": "",
+    "aprobado": true
+  },
+  {
+    "id": "w48_dom1_same_time",
+    "tipo": "post",
+    "fecha": "2026-11-29T07:00:00-05:00",
+    "archivos": [
+      "w48_dom1_same_time.jpg"
+    ],
+    "caption": "Domingo sin barra. El lunes, a la misma hora de siempre.\n#torote #torotegymwear #madeinecuador #gymquito",
+    "aprobado": true
+  },
+  {
+    "id": "w48_S_dom1_dia",
+    "tipo": "story",
+    "fecha": "2026-11-29T08:30:00-05:00",
+    "archivos": [
+      "w48_S_dom1_dia.jpg"
+    ],
+    "caption": "",
+    "aprobado": true
+  },
+  {
+    "id": "w48_S_dom2_producto",
+    "tipo": "story",
+    "fecha": "2026-11-29T11:00:00-05:00",
+    "archivos": [
+      "w48_S_dom2_producto.jpg"
+    ],
+    "caption": "",
+    "aprobado": true
+  },
+  {
+    "id": "w48_dom2_five_looks",
+    "tipo": "carrusel",
+    "fecha": "2026-11-29T12:30:00-05:00",
+    "archivos": [
+      "w48_dom2_five_looks_1.jpg",
+      "w48_dom2_five_looks_2.jpg",
+      "w48_dom2_five_looks_3.jpg",
+      "w48_dom2_five_looks_4.jpg",
+      "w48_dom2_five_looks_5.jpg",
+      "w48_dom2_five_looks_6.jpg"
+    ],
+    "caption": "Cinco combinaciones de estudio:\n01 Tank negro y muñequeras rojas ($20 el par).\n02 Camiseta Strong Soul manga larga.\n03 Hoodie Gym Wear negro.\n04 Camisetas negras Strong Soul y gorras TOROTE.\n05 Gorra Gym Wear negra ($20).\nRopa en tallas S a XL. Precios con IVA.\nPedidos: link en bio.\n#torote #torotegymwear #madeinecuador #gymquito",
+    "aprobado": true
+  },
+  {
+    "id": "w48_S_dom3_pregunta",
+    "tipo": "story",
+    "fecha": "2026-11-29T15:00:00-05:00",
+    "archivos": [
+      "w48_S_dom3_pregunta.jpg"
+    ],
+    "caption": "",
+    "aprobado": true
+  },
+  {
+    "id": "w48_S_dom4_foto",
+    "tipo": "story",
+    "fecha": "2026-11-29T18:00:00-05:00",
+    "archivos": [
+      "w48_S_dom4_foto.jpg"
+    ],
+    "caption": "",
+    "aprobado": true
+  },
+  {
+    "id": "w48_dom3_negra_roja",
+    "tipo": "post",
+    "fecha": "2026-11-29T19:30:00-05:00",
+    "archivos": [
+      "w48_dom3_negra_roja.jpg"
+    ],
+    "caption": "Maleta negra y roja con correa. $65, IVA incluido.\nComo pasa de $50, el envío va incluido.\nPedidos: link en bio.\n#torote #torotegymwear #madeinecuador #gymquito",
+    "aprobado": true
+  },
+  {
+    "id": "w48_S_dom5_pedido",
+    "tipo": "story",
+    "fecha": "2026-11-29T21:00:00-05:00",
+    "archivos": [
+      "w48_S_dom5_pedido.jpg"
+    ],
+    "caption": "",
+    "aprobado": true
   }
 ]
