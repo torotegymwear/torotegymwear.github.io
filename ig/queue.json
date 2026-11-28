@@ -3596,5 +3596,27 @@
     ],
     "caption": "",
     "aprobado": true
+  },
+  {
+    "id": "hf27v2_R_hombre_sentadilla",
+    "tipo": "reel",
+    "fecha": "2026-11-27T19:00:00-05:00",
+    "archivos": [
+      "hf27v2_hombre_sentadilla.mp4"
+    ],
+    "caption": "Coraje. Templanza. Sabiduría.\nEmpezar el set pesado aunque no tengas ganas. Dejar la última rep si la técnica se rompe. Entrenar con tu propio plan. Eso es Bravura.\nKit Bravura: gorra, straps o muñequeras, toalla y maleta. Hecho en Ecuador desde 2016.\nPedidos por WhatsApp, link en bio.\n#torote #torotegymwear #bravura #madeinecuador #gymquito",
+    "aprobado": true,
+    "portada_ms": 3000
+  },
+  {
+    "id": "hf27v2_R_mujer_press",
+    "tipo": "reel",
+    "fecha": "2026-11-27T19:00:00-05:00",
+    "archivos": [
+      "hf27v2_mujer_press.mp4"
+    ],
+    "caption": "Bravura no es gritar más fuerte.\nEs empezar aunque no tengas ganas, cuidar la técnica en cada rep y entrenar con tu propio plan.\nHecho en Ecuador desde 2016.\nPedidos por WhatsApp, link en bio.\n#torote #torotegymwear #bravura #madeinecuador #gymquito",
+    "aprobado": true,
+    "portada_ms": 1000
   }
 ]
